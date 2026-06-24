@@ -25,19 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Always start scrolled (opaque) — looks better
   nav?.classList.add('scrolled');
 
-  /* ── Active nav link (multi-page fallback) ─────────────── */
-  // On the single-page index.html, scroll-spy handles this.
-  // On other pages, mark the correct link.
-  const isIndexPage = window.location.pathname.endsWith('index.html') ||
-                      window.location.pathname === '/' ||
-                      window.location.pathname === '';
-  if (!isIndexPage) {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    document.querySelectorAll('.nav__link, .nav__drawer-link').forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === currentPage) link.classList.add('active');
-    });
-  }
 
   /* ── Mobile Hamburger ───────────────────────────────────── */
   const hamburger = document.getElementById('hamburger');

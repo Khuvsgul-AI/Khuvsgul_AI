@@ -167,6 +167,11 @@
 .mission-card__icon {
   font-size: 2.5rem;
   margin-bottom: var(--space-4);
+  color: var(--cyan-300);
+}
+
+.mission-card__icon svg {
+  stroke: var(--cyan-300);
 }
 
 .mission-card__label {
