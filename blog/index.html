@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Blog — Khuvsgul AI</title>
+  <meta name="description" content="Company news, AI insights, data strategies, and digital transformation guides for enterprises in Mongolia and Central Asia." />
+  <link rel="icon" type="image/png" href="../assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/pages/blog.css" />
+</head>
+<body class="bg-dark">
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="nav scrolled" role="navigation" aria-label="Main navigation">
+  <div class="container nav__container">
+    <a href="../index.html#home" class="nav__logo" aria-label="Khuvsgul AI Home">
+      <img src="../assets/images/logo.png" alt="Khuvsgul AI Logo" height="32" />
+    </a>
+    
+    <ul class="nav__links" role="list">
+      <li><a href="../index.html#home"      class="nav__link"            data-section="home"      data-i18n="nav.home">HOME</a></li>
+      <li><a href="../index.html#about"     class="nav__link"            data-section="about"     data-i18n="nav.about">ABOUT US</a></li>
+      <li><a href="../index.html#products"  class="nav__link"            data-section="products"  data-i18n="nav.products">PRODUCTS</a></li>
+      <li><a href="../index.html#solutions" class="nav__link"            data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a></li>
+      <li><a href="index.html"              class="nav__link spy-active" data-section="blog"      data-i18n="nav.blog">BLOG</a></li>
+      <li><a href="../index.html#faq"       class="nav__link"            data-section="faq"       data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="../index.html#contact"   class="nav__link"            data-section="contact"   data-i18n="nav.contact">CONTACT US</a></li>
+    </ul>
+
+    <div class="nav__controls">
+      <!-- INSERT CALENDLY LINK BELOW IF NEEDED -->
+      <a href="../index.html#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+      <div class="lang-toggle" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="mn">MN</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+  <nav class="nav__drawer-links" aria-label="Mobile navigation links">
+    <a href="../index.html#home"      class="nav__drawer-link" data-section="home"      data-i18n="nav.home">HOME</a>
+    <a href="../index.html#about"     class="nav__drawer-link" data-section="about"     data-i18n="nav.about">ABOUT US</a>
+    <a href="../index.html#products"  class="nav__drawer-link" data-section="products"  data-i18n="nav.products">PRODUCTS</a>
+    <a href="../index.html#solutions" class="nav__drawer-link" data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a>
+    <a href="index.html"              class="nav__drawer-link spy-active" data-section="blog" data-i18n="nav.blog">BLOG</a>
+    <a href="../index.html#faq"       class="nav__drawer-link" data-section="faq"       data-i18n="nav.faq">FAQ</a>
+    <a href="../index.html#contact"   class="nav__drawer-link" data-section="contact"   data-i18n="nav.contact">CONTACT US</a>
+  </nav>
+  <div class="nav__drawer-footer">
+    <!-- INSERT CALENDLY LINK BELOW IF NEEDED -->
+    <a href="../index.html#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+    <div class="lang-toggle" role="group">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="mn">MN</button>
+    </div>
+  </div>
+</div>
+
+<main>
+  <!-- ── Blog Header Hero ─────────────────────────────────── -->
+  <section class="page-hero blog-hero" aria-label="Blog Header">
+    <div class="container">
+      <div class="page-hero__content text-center">
+        <span class="blog-badge reveal" data-i18n="blog.label">OUR BLOG</span>
+        <h1 class="page-hero__headline reveal" data-i18n="blog.title">Company Insights & News</h1>
+        <p class="page-hero__body reveal" style="max-width:640px; margin: 0 auto;" data-i18n="blog.sub">
+          Stay updated with the latest in Artificial Intelligence, data strategy, and digital transformation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Post Section ────────────────────────────── -->
+  <section class="section featured-section" aria-labelledby="featured-heading">
+    <div class="container">
+      <h2 class="section-label reveal" id="featured-heading" style="margin-bottom:var(--space-6);" data-i18n="blog.featured">Featured Post</h2>
+      
+      <article class="featured-card reveal">
+        <div class="featured-card__image-container">
+          <div class="featured-card__image-placeholder"></div>
+          <div class="featured-card__image-graphic">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+        </div>
+        <div class="featured-card__content">
+          <div class="featured-card__meta">
+            <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.featured.cat">ENTERPRISE AI</span>
+            <span class="dot">•</span>
+            <span data-i18n="blog.featured.date">June 24, 2026</span>
+          </div>
+          <h3 class="featured-card__title"><a href="post/index.html" data-i18n="blog.featured.title">How LLMs are Transforming Mid-Market Enterprises in 2026</a></h3>
+          <p class="featured-card__desc" data-i18n="blog.featured.desc">
+            Artificial Intelligence is no longer just for big tech. Learn how mid-market retail and distribution companies in Central Asia are leveraging local LLMs to improve operational efficiency by up to 35%.
+          </p>
+          <a href="post/index.html" class="blog-card__link">
+            <span data-i18n="blog.read-more">Read Article</span>
+            <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Recent Grid Section ──────────────────────────────── -->
+  <section class="section bg-dark-2" style="border-top: 1px solid rgba(255, 255, 255, 0.03);" aria-labelledby="recent-heading">
+    <div class="container">
+      <h2 class="section-label reveal" id="recent-heading" style="margin-bottom:var(--space-8);" data-i18n="blog.recent">Recent Articles</h2>
+      
+      <div class="recent-grid">
+        <!-- Post 1 -->
+        <article class="blog-card reveal delay-1">
+          <div class="blog-card__image">
+            <div class="blog-card__image-placeholder"></div>
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post1.cat">DATA STRATEGY</span>
+              <span class="dot">•</span>
+              <span data-i18n="blog.post1.date">June 18, 2026</span>
+            </div>
+            <h3 class="blog-card__title"><a href="post/index.html" data-i18n="blog.post1.title">The Importance of Clean Business Data for AI Forecasting</a></h3>
+            <p class="blog-card__desc" data-i18n="blog.post1.desc">Before implementing predictive models, businesses must structure their internal database schemas. Here is a practical roadmap to data preparation.</p>
+            <a href="post/index.html" class="blog-card__link">
+              <span data-i18n="blog.read-more">Read Article</span>
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card reveal delay-2">
+          <div class="blog-card__image">
+            <div class="blog-card__image-placeholder"></div>
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post2.cat">SECURITY</span>
+              <span class="dot">•</span>
+              <span data-i18n="blog.post2.date">June 12, 2026</span>
+            </div>
+            <h3 class="blog-card__title"><a href="post/index.html" data-i18n="blog.post2.title">Deploying Local AI Assistants: Security & Governance</a></h3>
+            <p class="blog-card__desc" data-i18n="blog.post2.desc">How to train domain-specific models on proprietary company knowledge bases without leaking confidential intelligence to public APIs.</p>
+            <a href="post/index.html" class="blog-card__link">
+              <span data-i18n="blog.read-more">Read Article</span>
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card reveal delay-3">
+          <div class="blog-card__image">
+            <div class="blog-card__image-placeholder"></div>
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post3.cat">DECISION INTELLIGENCE</span>
+              <span class="dot">•</span>
+              <span data-i18n="blog.post3.date">May 28, 2026</span>
+            </div>
+            <h3 class="blog-card__title"><a href="post/index.html" data-i18n="blog.post3.title">ROI in AI: Measuring the Impact of Process Automation</a></h3>
+            <p class="blog-card__desc" data-i18n="blog.post3.desc">A mathematical guide for CFOs and CEOs to calculate financial payback timelines and operational savings from automation workflows.</p>
+            <a href="post/index.html" class="blog-card__link">
+              <span data-i18n="blog.read-more">Read Article</span>
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="bg-dark site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="../index.html#home"><img src="../assets/images/logo.png" alt="Khuvsgul AI" height="36" loading="lazy" /></a>
+        <p style="font-size:0.88rem;color:var(--text-muted-dark);margin-top:var(--space-4);max-width:280px;line-height:1.7;" data-i18n="footer.tagline">AI doesn't replace leaders. It empowers them to make better decisions.</p>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);" data-i18n="footer.links">Quick Links</div>
+        <ul style="display:flex;flex-direction:column;gap:var(--space-3);">
+          <li><a href="../index.html#home"      style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.home">HOME</a></li>
+          <li><a href="../index.html#about"     style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.about">ABOUT US</a></li>
+          <li><a href="../index.html#products"  style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.products">PRODUCTS</a></li>
+          <li><a href="../index.html#solutions" style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.solutions">SOLUTIONS</a></li>
+          <li><a href="index.html"              style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.blog">BLOG</a></li>
+          <li><a href="../index.html#faq"       style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="../index.html#contact"   style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.contact">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);" data-i18n="footer.contact-title">Contact</div>
+        <ul style="display:flex;flex-direction:column;gap:var(--space-3);">
+          <li><a href="mailto:info@khuvsgul.ai" style="font-size:0.88rem;color:rgba(255,255,255,0.6);">info@khuvsgul.ai</a></li>
+          <li><a href="https://www.khuvsgul.ai" style="font-size:0.88rem;color:rgba(255,255,255,0.6);">www.khuvsgul.ai</a></li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.5);" data-i18n="contact.details.city">Ulaanbaatar, Mongolia</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);">Get Started</div>
+        <!-- INSERT CALENDLY LINK BELOW IF NEEDED -->
+        <a href="../index.html#contact" class="btn btn--primary btn--sm" style="width:100%;justify-content:center;" data-i18n="cta.book-demo">BOOK A DEMO</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">
+        &copy; <span class="footer-year">2025</span> <span data-i18n="footer.copyright">Khuvsgul AI. All rights reserved.</span>
+      </p>
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">khuvsgulai.mn</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/lang.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

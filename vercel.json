@@ -1,4 +1,5 @@
 {
+  "cleanUrls": true,
   "redirects": [
     { "source": "/about.html", "destination": "/#about", "permanent": false },
     { "source": "/about", "destination": "/#about", "permanent": false },
@@ -9,6 +10,9 @@
     { "source": "/faq.html", "destination": "/#faq", "permanent": false },
     { "source": "/faq", "destination": "/#faq", "permanent": false },
     { "source": "/contact.html", "destination": "/#contact", "permanent": false },
-    { "source": "/contact", "destination": "/#contact", "permanent": false }
+    { "source": "/contact", "destination": "/#contact", "permanent": false },
+    { "source": "/blog.html", "destination": "/blog", "permanent": false },
+    { "source": "/blog/index.html", "destination": "/blog", "permanent": false },
+    { "source": "/blog/post/index.html", "destination": "/blog/post", "permanent": false }
   ]
 }
