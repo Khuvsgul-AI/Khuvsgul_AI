@@ -616,7 +616,7 @@
             <p class="form-success__body" data-i18n="contact.success.body">Thank you for reaching out. We'll be in touch within 24 hours.</p>
           </div>
           <!-- Replace YOUR_FORM_ID with your Formspree endpoint -->
-          <form id="contact-form-el" action="https://formspree.io/f/YOUR_FORM_ID" <!-- INSERT FORMSPREE ID --> method="POST" novalidate>
+          <form id="contact-form-el" action="mailto:info@khuvsgul.ai" method="POST" novalidate>
             <!-- Sleek inline error notification -->
             <div class="form-error-banner" id="form-error-banner" role="alert" aria-live="assertive" style="display:none; align-items:center; gap:var(--space-3); background:rgba(235,87,87,0.1); border:1px solid #EB5757; padding:var(--space-3) var(--space-4); border-radius:var(--radius-md); color:#EB5757; margin-bottom:var(--space-4); font-size:0.9rem;">
               <span style="font-size:1.1rem; line-height:1;">⚠️</span>
@@ -787,7 +787,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btn     = document.getElementById('btn-submit');
   if (!form) return;
 
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', (e) => {
     e.preventDefault();
     const errorBanner = document.getElementById('form-error-banner');
     if (errorBanner) errorBanner.style.display = 'none';
@@ -812,21 +812,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!valid) return;
 
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-    try {
-      const res = await fetch(form.action, { method:'POST', body: new FormData(form), headers:{ Accept:'application/json' } });
-      if (res.ok) { form.style.display='none'; success.classList.add('visible'); }
-      else throw new Error();
-    } catch {
-      btn.textContent = 'Try Again';
-      btn.disabled = false;
-      if (errorBanner) {
-        errorBanner.style.display = 'flex';
-      } else {
-        alert('Something went wrong. Please email us at info@khuvsgul.ai');
-      }
-    }
+    // Use mailto submission fallback
+    const name = form.elements['name']?.value || '';
+    const company = form.elements['company']?.value || '';
+    const email = form.elements['email']?.value || '';
+    const phone = form.elements['phone']?.value || '';
+    const message = form.elements['message']?.value || '';
+
+    const subject = encodeURIComponent(`Khuvsgul AI Contact Request from ${name}`);
+    let bodyText = `Name: ${name}\n`;
+    if (company) bodyText += `Company: ${company}\n`;
+    bodyText += `Email: ${email}\n`;
+    if (phone) bodyText += `Phone: ${phone}\n`;
+    bodyText += `\nMessage:\n${message}`;
+    const body = encodeURIComponent(bodyText);
+
+    window.location.href = `mailto:info@khuvsgul.ai?subject=${subject}&body=${body}`;
+
+    // Display success panel
+    form.style.display = 'none';
+    success.classList.add('visible');
   });
 
   form.querySelectorAll('.form-input, .form-textarea').forEach(el => {
