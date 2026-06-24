@@ -12,6 +12,7 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="canonical" href="https://khuvsgulai.mn/" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -81,7 +82,7 @@
     </ul>
 
     <div class="nav__controls">
-      <a href="#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+      <a href="#contact" <!-- INSERT CALENDLY LINK --> class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
       <div class="lang-toggle" role="group" aria-label="Language selection">
         <button class="lang-btn active" data-lang="en">EN</button>
         <button class="lang-btn" data-lang="mn">MN</button>
@@ -104,7 +105,7 @@
     <a href="#contact"   class="nav__drawer-link" data-section="contact"   data-i18n="nav.contact">CONTACT US</a>
   </nav>
   <div class="nav__drawer-footer">
-    <a href="#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+    <a href="#contact" <!-- INSERT CALENDLY LINK --> class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
     <div class="lang-toggle" role="group">
       <button class="lang-btn active" data-lang="en">EN</button>
       <button class="lang-btn" data-lang="mn">MN</button>
@@ -147,7 +148,7 @@
       </p>
 
       <div class="hero__cta hero-animate hero-animate-5">
-        <a href="#contact" class="btn btn--primary btn--lg" data-i18n="home.hero.cta1">BOOK A DEMO</a>
+        <a href="#contact" <!-- INSERT CALENDLY LINK --> class="btn btn--primary btn--lg" data-i18n="home.hero.cta1">BOOK A DEMO</a>
         <a href="#about"   class="btn btn--ghost-light"     data-i18n="home.hero.cta2">LEARN MORE</a>
       </div>
     </div>
@@ -615,7 +616,12 @@
             <p class="form-success__body" data-i18n="contact.success.body">Thank you for reaching out. We'll be in touch within 24 hours.</p>
           </div>
           <!-- Replace YOUR_FORM_ID with your Formspree endpoint -->
-          <form id="contact-form-el" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form id="contact-form-el" action="https://formspree.io/f/YOUR_FORM_ID" <!-- INSERT FORMSPREE ID --> method="POST" novalidate>
+            <!-- Sleek inline error notification -->
+            <div class="form-error-banner" id="form-error-banner" role="alert" aria-live="assertive" style="display:none; align-items:center; gap:var(--space-3); background:rgba(235,87,87,0.1); border:1px solid #EB5757; padding:var(--space-3) var(--space-4); border-radius:var(--radius-md); color:#EB5757; margin-bottom:var(--space-4); font-size:0.9rem;">
+              <span style="font-size:1.1rem; line-height:1;">⚠️</span>
+              <span id="form-error-msg" data-i18n="contact.error.message">Something went wrong. Please email us at info@khuvsgul.ai</span>
+            </div>
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="field-name"><span data-i18n="contact.form.name">Full Name</span><span class="required">*</span></label>
@@ -716,11 +722,13 @@
       </div>
       <div>
         <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);">Get Started</div>
-        <a href="#contact" class="btn btn--primary btn--sm" style="width:100%;justify-content:center;" data-i18n="cta.book-demo">BOOK A DEMO</a>
+        <a href="#contact" <!-- INSERT CALENDLY LINK --> class="btn btn--primary btn--sm" style="width:100%;justify-content:center;" data-i18n="cta.book-demo">BOOK A DEMO</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);" data-i18n="footer.copyright">© 2025 Khuvsgul AI. All rights reserved.</p>
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">
+        &copy; <span class="footer-year">2025</span> <span data-i18n="footer.copyright">Khuvsgul AI. All rights reserved.</span>
+      </p>
       <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">khuvsgulai.mn</p>
     </div>
   </div>
@@ -781,6 +789,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+    const errorBanner = document.getElementById('form-error-banner');
+    if (errorBanner) errorBanner.style.display = 'none';
     let valid = true;
 
     ['name','email','message'].forEach(f => {
@@ -811,7 +821,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch {
       btn.textContent = 'Try Again';
       btn.disabled = false;
-      alert('Something went wrong. Please email us at info@khuvsgul.ai');
+      if (errorBanner) {
+        errorBanner.style.display = 'flex';
+      } else {
+        alert('Something went wrong. Please email us at info@khuvsgul.ai');
+      }
     }
   });
 

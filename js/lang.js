@@ -16,7 +16,7 @@ const TRANSLATIONS = {
 
     /* FOOTER */
     "footer.tagline": "AI doesn't replace leaders. It empowers them to make better decisions.",
-    "footer.copyright": "© 2025 Khuvsgul AI. All rights reserved.",
+    "footer.copyright": "Khuvsgul AI. All rights reserved.",
     "footer.links":  "Quick Links",
     "footer.contact-title": "Contact",
 
@@ -289,6 +289,7 @@ const TRANSLATIONS = {
     "contact.details.web":   "www.khuvsgul.ai",
     "contact.details.city":  "Ulaanbaatar, Mongolia",
     "contact.details.address":"13th Floor, NM Tower, Mahatma Gandhi Street, 15th Khoroo, Khan-Uul District, Ulaanbaatar",
+    "contact.error.message": "Something went wrong. Please email us at info@khuvsgul.ai",
 
     /* SHARED */
     "cta.book-demo":    "BOOK A DEMO",
@@ -308,7 +309,7 @@ const TRANSLATIONS = {
 
     /* FOOTER */
     "footer.tagline": "AI нь удирдагчдыг орлохгүй. Харин илүү зөв шийдвэр гаргахад нь хүчирхэгжүүлнэ.",
-    "footer.copyright": "© 2025 Khuvsgul AI. Бүх эрх хамгаалагдсан.",
+    "footer.copyright": "Khuvsgul AI. Бүх эрх хамгаалагдсан.",
     "footer.links":  "Хурдан холбоос",
     "footer.contact-title": "Холбоо барих",
 
@@ -536,7 +537,7 @@ const TRANSLATIONS = {
     /* FAQ */
     "faq.hero.headline": "Түгээмэл Асуултууд",
     "faq.hero.sub":      "Бизнест хиймэл оюун ухааны талаар асуулт байна уу? Бид хариулт өгнө.",
-    "faq.label":         "АСУУЛЬТУУД",
+    "faq.label":         "АСУУЛТУУД",
     "faq.title":         "Нийтлэг Асуултууд",
     "faq.q1":   "Манай байгууллага IT баггүй. AI нэвтрүүлж чадах уу?",
     "faq.a1.lead": "Тийм мэдээж.",
@@ -548,8 +549,8 @@ const TRANSLATIONS = {
     "faq.a3.lead": "Заавал биш.",
     "faq.a3.body": "Ихэнх байгууллагын дата төгс байдаггүй. Бид өгөгдлийг цэгцэлж, утга учиртай шинжилгээ хийхэд бэлэн болгоход тусалдаг. Бүх өгөгдлийг биш, шийдвэр гаргалтанд хэрэгтэй гол датануудыг цэгцэлж хэрэгжүүлнэ.",
     "faq.q4":   "Хэрэгжүүлэхэд хэр хугацаа шаардлагатай вэ?",
-    "faq.a4.lead": "2–3 сар.",
-    "faq.a4.body": "Ихэнх дашбоардын шийдлийг 2-3 сарын дотор нэвтрүүлэх боломжтой. Нарийн төвөгтэй хэрэгжилт нь илүү урт хугацаа авч болох ч бид үргэлж аль болох хурдан үнэ цэнэ хүргэхийг зорьдог.",
+    "faq.a4.lead": "4–8 долоо хоног.",
+    "faq.a4.body": "Ихэнх дашбоардын шийдлийг 4-8 долоо хоногийн дотор нэвтрүүлэх боломжтой. Нарийн төвөгтэй хэрэгжилт нь илүү урт хугацаа авч болох ч бид үргэлж аль болох хурдан үнэ цэнэ хүргэхийг зорьдог.",
     "faq.q5":   "Манай одоогийн системүүдтэй холбогдож чадах уу?",
     "faq.a5.lead": "Тийм.",
     "faq.a5.body": "Бид ERP, санхүүгийн систем, CRM, POS, Excel болон тусгайлан хөгжүүлсэн системүүдтэй холбогдон ажиллах боломжтой. Манай баг техникийн интеграцийг хариуцдаг.",
@@ -581,6 +582,7 @@ const TRANSLATIONS = {
     "contact.details.web":   "www.khuvsgul.ai",
     "contact.details.city":  "Улаанбаатар, Монгол Улс",
     "contact.details.address":"Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, NM Tower, 13 давхар, Улаанбаатар",
+    "contact.error.message": "Алдаа гарлаа. info@khuvsgul.ai хаягаар имэйл илгээнэ үү.",
 
     /* SHARED */
     "cta.book-demo":    "ДЕМО ЗАХИАЛАХ",

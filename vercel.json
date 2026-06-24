@@ -1,14 +1,14 @@
 {
   "redirects": [
-    { "source": "/about.html", "destination": "/#about", "permanent": true },
-    { "source": "/about", "destination": "/#about", "permanent": true },
-    { "source": "/products.html", "destination": "/#products", "permanent": true },
-    { "source": "/products", "destination": "/#products", "permanent": true },
-    { "source": "/solutions.html", "destination": "/#solutions", "permanent": true },
-    { "source": "/solutions", "destination": "/#solutions", "permanent": true },
-    { "source": "/faq.html", "destination": "/#faq", "permanent": true },
-    { "source": "/faq", "destination": "/#faq", "permanent": true },
-    { "source": "/contact.html", "destination": "/#contact", "permanent": true },
-    { "source": "/contact", "destination": "/#contact", "permanent": true }
+    { "source": "/about.html", "destination": "/#about", "permanent": false },
+    { "source": "/about", "destination": "/#about", "permanent": false },
+    { "source": "/products.html", "destination": "/#products", "permanent": false },
+    { "source": "/products", "destination": "/#products", "permanent": false },
+    { "source": "/solutions.html", "destination": "/#solutions", "permanent": false },
+    { "source": "/solutions", "destination": "/#solutions", "permanent": false },
+    { "source": "/faq.html", "destination": "/#faq", "permanent": false },
+    { "source": "/faq", "destination": "/#faq", "permanent": false },
+    { "source": "/contact.html", "destination": "/#contact", "permanent": false },
+    { "source": "/contact", "destination": "/#contact", "permanent": false }
   ]
 }
