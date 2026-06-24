@@ -258,6 +258,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.post-meta .blog-badge,
+.featured-card__meta .blog-badge,
+.blog-card__meta .blog-badge {
+  margin-bottom: 0;
+}
+
 .post-author {
   display: flex;
   align-items: center;
