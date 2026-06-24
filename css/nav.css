@@ -1,0 +1,288 @@
+/* ============================================================
+   NAVIGATION
+   nav.css
+   ============================================================ */
+
+/* ── Nav Shell ────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.nav.scrolled {
+  background: rgba(10, 22, 40, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05), 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ── Logo ─────────────────────────────────────────────────── */
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.nav__logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav__logo-name {
+  font-size: 1.15rem;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+.nav__logo-name span {
+  color: var(--cyan-400);
+}
+
+.nav__logo-tagline {
+  font-size: 0.62rem;
+  color: var(--gray-400);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 1px;
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.nav__link {
+  position: relative;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.75);
+  text-transform: uppercase;
+  transition: color var(--transition-fast);
+  border-radius: var(--radius-sm);
+}
+
+.nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blue-500), var(--cyan-400));
+  border-radius: var(--radius-full);
+  transform: scaleX(0);
+  transition: transform var(--transition-base);
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--white);
+}
+
+.nav__link:hover::after,
+.nav__link.active::after {
+  transform: scaleX(1);
+}
+
+/* ── Right Controls ───────────────────────────────────────── */
+.nav__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+/* ── Language Toggle ──────────────────────────────────────── */
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-full);
+  padding: 3px;
+  gap: 2px;
+}
+
+.lang-btn {
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  background: none;
+}
+
+.lang-btn.active {
+  background: var(--blue-500);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(0,102,204,0.4);
+}
+
+.lang-btn:hover:not(.active) {
+  color: var(--white);
+  background: rgba(255,255,255,0.1);
+}
+
+/* ── Hamburger ────────────────────────────────────────────── */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 4px;
+  background: none;
+  border: none;
+}
+
+.nav__hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--white);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  transform-origin: center;
+}
+
+.nav__hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav__hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+.nav__hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile Drawer ────────────────────────────────────────── */
+.nav__drawer {
+  display: none;
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 22, 40, 0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  z-index: 999;
+  flex-direction: column;
+  padding: var(--space-8) var(--space-6) var(--space-12);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity var(--transition-base), transform var(--transition-base);
+  pointer-events: none;
+  overflow-y: auto;
+}
+
+.nav__drawer.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.nav__drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+
+.nav__drawer-link {
+  padding: var(--space-4) var(--space-4);
+  font-size: 1rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast), color var(--transition-fast);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav__drawer-link:hover,
+.nav__drawer-link.active {
+  background: rgba(0,168,232,0.1);
+  color: var(--white);
+  padding-left: var(--space-5);
+}
+
+.nav__drawer-footer {
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__drawer-footer .lang-toggle {
+  border-color: rgba(255,255,255,0.2);
+}
+
+/* ── Body push-down for fixed nav ─────────────────────────── */
+.nav-spacer {
+  height: var(--nav-height);
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__controls .btn {
+    display: none;
+  }
+  .nav__hamburger {
+    display: flex;
+  }
+  .nav__drawer {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__inner {
+    padding: 0 var(--space-4);
+  }
+  .nav__logo-tagline {
+    display: none;
+  }
+}

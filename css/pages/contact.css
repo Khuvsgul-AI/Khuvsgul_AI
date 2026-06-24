@@ -1,0 +1,335 @@
+/* ============================================================
+   CONTACT PAGE STYLES
+   css/pages/contact.css
+   ============================================================ */
+
+/* ── Contact Hero ─────────────────────────────────────────── */
+.contact-hero {
+  background: var(--navy-900);
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../../assets/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.18;
+}
+
+.contact-hero__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-hero__content h2 {
+  color: var(--white);
+  margin-bottom: var(--space-5);
+}
+
+.contact-hero__content p {
+  color: rgba(255,255,255,0.65);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+/* ── Contact Layout ───────────────────────────────────────── */
+.contact-section {
+  background: var(--offwhite);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+/* ── Form ─────────────────────────────────────────────────── */
+.contact-form-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-100);
+}
+
+.form-title {
+  font-size: 1.3rem;
+  font-weight: var(--fw-bold);
+  color: var(--navy-900);
+  margin-bottom: var(--space-2);
+}
+
+.form-subtitle {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin-bottom: var(--space-8);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.form-group {
+  margin-bottom: var(--space-5);
+}
+
+.form-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: var(--fw-semibold);
+  color: var(--text-dark);
+  margin-bottom: var(--space-2);
+  letter-spacing: 0.02em;
+}
+
+.form-label .required {
+  color: var(--danger);
+  margin-left: 2px;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background: var(--white);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+  appearance: none;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  border-color: var(--blue-500);
+  box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--gray-400);
+}
+
+.form-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.form-input.error,
+.form-textarea.error {
+  border-color: var(--danger);
+}
+
+.form-error-msg {
+  font-size: 0.78rem;
+  color: var(--danger);
+  margin-top: var(--space-1);
+  display: none;
+}
+
+.form-error-msg.visible {
+  display: block;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 16px;
+  font-size: 0.95rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+}
+
+/* Success state */
+.form-success {
+  display: none;
+  text-align: center;
+  padding: var(--space-12) var(--space-8);
+}
+
+.form-success.visible {
+  display: block;
+}
+
+.form-success__icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+  color: var(--success);
+}
+
+.form-success__title {
+  font-size: 1.2rem;
+  font-weight: var(--fw-bold);
+  color: var(--success);
+  margin-bottom: var(--space-3);
+}
+
+.form-success__body {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+}
+
+/* ── Right Column ─────────────────────────────────────────── */
+.contact-aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-8));
+}
+
+/* ── Consultation Offer Card ──────────────────────────────── */
+.consult-card {
+  background: var(--navy-900);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  border: 1px solid rgba(0,168,232,0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.consult-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue-500), var(--cyan-400));
+}
+
+.consult-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-4);
+  color: var(--cyan-400);
+}
+
+.consult-card__title {
+  font-size: 1.05rem;
+  font-weight: var(--fw-bold);
+  color: var(--white);
+  margin-bottom: var(--space-3);
+}
+
+.consult-card__text {
+  font-size: 0.88rem;
+  color: var(--text-muted-dark);
+  line-height: 1.7;
+}
+
+/* ── Contact Details Card ─────────────────────────────────── */
+.contact-details-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.contact-detail-item:last-child {
+  border-bottom: none;
+}
+
+.contact-detail-item__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(0,102,204,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  color: var(--blue-500);
+}
+
+.contact-detail-item__label {
+  font-size: 0.72rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 2px;
+}
+
+.contact-detail-item__value {
+  font-size: 0.9rem;
+  font-weight: var(--fw-medium);
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.contact-detail-item__value a {
+  color: var(--blue-500);
+  transition: color var(--transition-fast);
+}
+
+.contact-detail-item__value a:hover {
+  color: var(--cyan-400);
+}
+
+/* ── Map ──────────────────────────────────────────────────── */
+.map-section {
+  padding: 0;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  display: block;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-aside {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .consult-card,
+  .contact-details-card {
+    flex: 1;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-card {
+    padding: var(--space-6);
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .contact-aside {
+    flex-direction: column;
+  }
+}

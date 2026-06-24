@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khuvsgul AI — AI That Helps Leaders Make Better Decisions</title>
+  <meta name="description" content="Khuvsgul AI helps business owners, CEOs, and leadership teams transform complex data into clear, actionable insights through AI-powered dashboards, forecasting tools, and intelligent automation." />
+  <meta property="og:title" content="Khuvsgul AI — AI That Helps Leaders Make Better Decisions" />
+  <meta property="og:description" content="AI-powered business intelligence for Mongolia and Central Asia. Executive dashboards, forecasting, and process automation." />
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta property="og:url" content="https://khuvsgulai.mn/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://khuvsgulai.mn/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+  <link rel="stylesheet" href="css/pages/products.css" />
+  <link rel="stylesheet" href="css/pages/faq.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+  <style>
+    /* ── Single-page scroll tweaks ─────────────────────────── */
+    html { scroll-behavior: smooth; }
+
+    /* Offset anchors so sticky nav doesn't cover headings */
+    :target { scroll-margin-top: calc(var(--nav-height) + 16px); }
+
+    /* Section scroll-margin for all sections */
+    section[id] { scroll-margin-top: var(--nav-height); }
+
+    /* Scroll-spy active link override */
+    .nav__link.spy-active,
+    .nav__drawer-link.spy-active {
+      color: var(--white);
+    }
+    .nav__link.spy-active::after {
+      transform: scaleX(1);
+    }
+
+    /* Remove page-hero forced height on sub-sections since they're in-page */
+    #about.about-hero, #products.page-hero, #solutions.page-hero,
+    #faq.faq-hero, #contact.contact-hero {
+      min-height: unset;
+      padding-top: calc(var(--nav-height) + var(--space-16));
+      padding-bottom: var(--space-16);
+    }
+
+    /* Team grid bottom margin inside single page */
+    .team-grid-bottom { margin-top: var(--space-6); }
+
+    /* Reduce top padding for sections following a dark hero */
+    .section + .section { }
+
+    /* Contact map full-width */
+    .map-section iframe { width: 100%; height: 380px; display: block; border: none; }
+  </style>
+</head>
+<body>
+
+<!-- Skip to content -->
+<a href="#home" class="skip-link">Skip to main content</a>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVIGATION  (sticky, scroll-spy highlights active section)
+═══════════════════════════════════════════════════════════════ -->
+<nav class="nav scrolled" id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Khuvsgul AI — back to top">
+      <img src="assets/images/logo.png" alt="Khuvsgul AI" class="nav__logo-img" width="140" height="38" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#home"      class="nav__link spy-active" data-section="home"      data-i18n="nav.home">HOME</a></li>
+      <li><a href="#about"     class="nav__link"            data-section="about"     data-i18n="nav.about">ABOUT US</a></li>
+      <li><a href="#products"  class="nav__link"            data-section="products"  data-i18n="nav.products">PRODUCTS</a></li>
+      <li><a href="#solutions" class="nav__link"            data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a></li>
+      <li><a href="#faq"       class="nav__link"            data-section="faq"       data-i18n="nav.faq">FAQ</a></li>
+      <li><a href="#contact"   class="nav__link"            data-section="contact"   data-i18n="nav.contact">CONTACT US</a></li>
+    </ul>
+
+    <div class="nav__controls">
+      <a href="#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+      <div class="lang-toggle" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="mn">MN</button>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav__drawer" id="nav-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+  <nav class="nav__drawer-links" aria-label="Mobile navigation links">
+    <a href="#home"      class="nav__drawer-link" data-section="home"      data-i18n="nav.home">HOME</a>
+    <a href="#about"     class="nav__drawer-link" data-section="about"     data-i18n="nav.about">ABOUT US</a>
+    <a href="#products"  class="nav__drawer-link" data-section="products"  data-i18n="nav.products">PRODUCTS</a>
+    <a href="#solutions" class="nav__drawer-link" data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a>
+    <a href="#faq"       class="nav__drawer-link" data-section="faq"       data-i18n="nav.faq">FAQ</a>
+    <a href="#contact"   class="nav__drawer-link" data-section="contact"   data-i18n="nav.contact">CONTACT US</a>
+  </nav>
+  <div class="nav__drawer-footer">
+    <a href="#contact" class="btn btn--primary btn--sm" data-i18n="cta.book-demo">BOOK A DEMO</a>
+    <div class="lang-toggle" role="group">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="mn">MN</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     MAIN — All sections stacked, each with an id for scroll nav
+═══════════════════════════════════════════════════════════════ -->
+<main id="main-content">
+
+<!-- ─────────────────────────────────────────────────────────
+     §1  HOME / HERO
+───────────────────────────────────────────────────────────── -->
+<section class="hero" id="home" aria-label="Home hero">
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow hero-animate hero-animate-1">
+        <div class="glow-dot" aria-hidden="true"></div>
+        <span class="hero__eyebrow-text" data-i18n="home.hero.eyebrow">AI-Powered Business Intelligence</span>
+      </div>
+
+      <h1 class="hero__headline hero-animate hero-animate-2">
+        <span data-i18n="home.hero.headline1">AI That Helps Leaders</span><br />
+        <span class="highlight" data-i18n="home.hero.headline2">Make Better Decisions</span>
+      </h1>
+
+      <p class="hero__sub hero-animate hero-animate-3" data-i18n="home.hero.sub">
+        Most businesses don't need more data. They need better decisions.
+      </p>
+
+      <p class="hero__body hero-animate hero-animate-4" data-i18n="home.hero.body">
+        Khuvsgul AI helps business owners, CEOs, and leadership teams transform complex business data into clear, actionable insights through AI-powered dashboards, forecasting tools, and intelligent automation.
+      </p>
+
+      <div class="hero__cta hero-animate hero-animate-5">
+        <a href="#contact" class="btn btn--primary btn--lg" data-i18n="home.hero.cta1">BOOK A DEMO</a>
+        <a href="#about"   class="btn btn--ghost-light"     data-i18n="home.hero.cta2">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+
+  <a href="#problems" class="hero__scroll scroll-indicator" aria-label="Scroll down">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M7 10l5 5 5-5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span data-i18n="home.hero.scroll">Scroll to explore</span>
+  </a>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §2  PROBLEMS WE SOLVE
+───────────────────────────────────────────────────────────── -->
+<section class="section questions-section" id="problems" aria-labelledby="questions-heading">
+  <div class="container">
+    <div class="section-header--center reveal">
+      <span class="section-label" data-i18n="home.q.label">THE PROBLEMS WE SOLVE</span>
+      <h2 class="heading-1" id="questions-heading" data-i18n="home.q.title">Questions We Help You Answer</h2>
+      <p data-i18n="home.q.sub">Stop guessing. Start knowing.</p>
+    </div>
+
+    <div class="questions-grid">
+      <div class="question-card reveal delay-1">
+        <span class="question-card__text" data-i18n="home.q.1">What is driving our profitability?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="question-card reveal delay-2">
+        <span class="question-card__text" data-i18n="home.q.2">Which products generate profit and which destroy it?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="question-card reveal delay-3">
+        <span class="question-card__text" data-i18n="home.q.3">What will sales look like next month?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="question-card reveal delay-4">
+        <span class="question-card__text" data-i18n="home.q.4">How is seasonality affecting performance?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="question-card reveal delay-5">
+        <span class="question-card__text" data-i18n="home.q.5">Where are the biggest growth opportunities?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+      <div class="question-card reveal delay-6">
+        <span class="question-card__text" data-i18n="home.q.6">What should we do next?</span>
+        <svg class="question-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </div>
+
+    <p class="questions-tagline reveal">
+      <span data-i18n="home.q.tagline">All in one place.</span>
+      <span class="text-blue" data-i18n="home.q.tagline2"> In real time.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §3  ACHIEVEMENTS
+───────────────────────────────────────────────────────────── -->
+<section class="section achievements-section bg-dark" aria-labelledby="achieve-heading">
+  <div class="container">
+    <div class="section-header--center reveal" style="color: var(--text-light);">
+      <span class="section-label" data-i18n="home.achieve.label">OUTCOMES</span>
+      <h2 class="heading-1" id="achieve-heading" data-i18n="home.achieve.title">What We Help You Achieve</h2>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-item reveal delay-1"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.1">Increase profitability</span></div>
+      <div class="achievement-item reveal delay-2"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.2">Improve decision quality</span></div>
+      <div class="achievement-item reveal delay-3"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.3">Gain complete visibility</span></div>
+      <div class="achievement-item reveal delay-4"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.4">Reduce manual reporting</span></div>
+      <div class="achievement-item reveal delay-5"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.5">Forecast future performance</span></div>
+      <div class="achievement-item reveal delay-6"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.6">Identify growth opportunities</span></div>
+      <div class="achievement-item reveal delay-7"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.7">Make data-driven decisions faster</span></div>
+      <div class="achievement-item reveal delay-8"><div class="achievement-check" aria-hidden="true">✓</div><span class="achievement-text" data-i18n="home.achieve.8">Build a culture of accountability</span></div>
+    </div>
+    <div class="text-center" style="margin-top:var(--space-12);">
+      <a href="#contact" class="btn btn--outline" data-i18n="home.achieve.cta">CONTACT US</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §4  WHY AI FAILS
+───────────────────────────────────────────────────────────── -->
+<section class="section why-fail-section" aria-labelledby="fail-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label" data-i18n="home.fail.label">OUR DIFFERENCE</span>
+      <h2 class="heading-1" id="fail-heading" data-i18n="home.fail.title">Why Most AI Projects Fail</h2>
+    </div>
+    <div class="why-fail-grid">
+      <div class="reveal-left">
+        <div class="why-fail-col__label problem" data-i18n="home.fail.col1">Common Challenges</div>
+        <ul class="fail-list" role="list">
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p1">Start with technology instead of business problems</span></li>
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p2">Fragmented, difficult-to-use data</span></li>
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p3">Solutions too complex for the team</span></li>
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p4">Internal teams lack AI expertise</span></li>
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p5">Enterprise software too expensive</span></li>
+          <li class="fail-item"><div class="fail-icon x" aria-hidden="true">✕</div><span data-i18n="home.fail.p6">Cannot measure ROI</span></li>
+        </ul>
+      </div>
+      <div class="why-fail-divider" aria-hidden="true"></div>
+      <div class="reveal-right">
+        <div class="why-fail-col__label solution" data-i18n="home.fail.col2">The Khuvsgul AI Approach</div>
+        <ul class="fail-list" role="list">
+          <li class="fail-item"><div class="fail-icon check" aria-hidden="true">✓</div><span data-i18n="home.fail.s1">We begin with what leaders need most</span></li>
+          <li class="fail-item"><div class="fail-icon check" aria-hidden="true">✓</div><span data-i18n="home.fail.s2">We build practical AI solutions that create measurable business value</span></li>
+        </ul>
+        <blockquote class="why-fail-statement" data-i18n="home.fail.s3">No unnecessary complexity. No expensive enterprise platforms. Just solutions that work.</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §5  ABOUT US
+───────────────────────────────────────────────────────────── -->
+<section class="about-hero" id="about" aria-label="About us">
+  <div class="container">
+    <div class="about-hero__content">
+      <span class="section-label reveal" style="justify-content:center;" data-i18n="about.origin.label">OUR STORY</span>
+      <h2 class="heading-display about-hero__headline reveal" data-i18n="about.hero.headline">From Cambridge to Central Asia</h2>
+      <blockquote class="about-hero__pullquote reveal" data-i18n="about.hero.pullquote">"Artificial Intelligence should be practical, accessible, and valuable for businesses."</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section origin-section" aria-labelledby="origin-heading">
+  <div class="container">
+    <div class="origin-inner">
+      <div class="origin-badge reveal-left">
+        <div class="origin-badge__item"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></span><span data-i18n="about.origin.badge1">Cambridge Judge Business School</span></div>
+        <div class="origin-badge__item"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span><span data-i18n="about.origin.badge2">Mongolia & Central Asia</span></div>
+        <div class="origin-badge__item"><span class="icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span data-i18n="about.origin.badge3">Joint Venture</span></div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label" data-i18n="about.origin.label">OUR STORY</span>
+        <h3 class="heading-2" id="origin-heading" style="margin-bottom:var(--space-6);" data-i18n="about.origin.title">How It All Began</h3>
+        <div class="origin-prose">
+          <p data-i18n="about.origin.p1">The idea began at the University of Cambridge Judge Business School, where two classmates — an AI scientist and a business leader — discovered a shared vision. One brought deep expertise in artificial intelligence, machine learning, and enterprise technology. The other brought years of experience scaling businesses and understanding the challenges business owners face every day.</p>
+          <p data-i18n="about.origin.p2">Together, supported by the Cambridge ecosystem and global networks, they founded Khuvsgul AI. Today, Khuvsgul AI combines world-class AI capabilities with practical business leadership to help organisations across Mongolia and Central Asia unlock the true value of their data.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="section mission-section" aria-labelledby="mission-heading">
+  <div class="container">
+    <div class="section-header--center reveal" style="color:var(--text-light);">
+      <span class="section-label" data-i18n="about.mission.label">PURPOSE</span>
+      <h2 class="heading-1" id="mission-heading" data-i18n="about.mission.title">Mission & Vision</h2>
+    </div>
+    <div class="mission-cards">
+      <div class="mission-card reveal-left">
+        <div class="mission-card__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <div class="mission-card__label" data-i18n="about.mission.card1.label">OUR MISSION</div>
+        <h3 class="mission-card__title" data-i18n="about.mission.card1.title">Making AI Practical for Every Business</h3>
+        <p class="mission-card__text" data-i18n="about.mission.card1.text">To make Artificial Intelligence practical, affordable, and accessible for every business — regardless of size, industry, or technical capability.</p>
+      </div>
+      <div class="mission-card reveal-right">
+        <div class="mission-card__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="mission-card__label" data-i18n="about.mission.card2.label">OUR VISION</div>
+        <h3 class="mission-card__title" data-i18n="about.mission.card2.title">Most Trusted AI Partner in Central Asia</h3>
+        <p class="mission-card__text" data-i18n="about.mission.card2.text">To become the most trusted AI transformation partner in Mongolia and Central Asia, helping organisations of all sizes make better decisions faster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section team-section" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="section-header--center reveal" style="color:var(--text-light);">
+      <span class="section-label" data-i18n="about.team.label">EXECUTIVE TEAM</span>
+      <h2 class="heading-1" id="team-heading" data-i18n="about.team.title">The People Behind Khuvsgul AI</h2>
+    </div>
+    <div class="team-grid">
+      <article class="team-card reveal delay-1">
+        <div class="team-card__photo-wrap"><img src="assets/team/batbaatar.jpg" alt="Batbaatar Narantuya, Chairman" class="team-card__photo" width="110" height="110" loading="lazy" /></div>
+        <h3 class="team-card__name" data-i18n="team.batbaatar.name">Batbaatar Narantuya</h3>
+        <p class="team-card__title" data-i18n="team.batbaatar.title">Chairman & Co-Founder</p>
+        <div class="team-card__bio">
+          <span class="team-card__bio-short" data-i18n="team.batbaatar.short">Entrepreneur, executive coach, and business leader with 25+ years scaling businesses.</span>
+          <span class="team-card__bio-full" data-i18n="team.batbaatar.full">As Chairman and Co-Founder of Nano Group, he successfully led the growth of multiple companies, including scaling Nano International more than 20x and helping build RE/MAX Mongolia into one of the largest RE/MAX regions in Asia-Pacific with more than 1,800 agents. He holds a Master's Degree in Applied Project Management from the University of Adelaide, Australia.</span>
+          <button class="team-card__read-more" aria-expanded="false">Read more →</button>
+        </div>
+        <div class="team-card__badges"><span class="team-card__badge">Nano Group</span><span class="team-card__badge">RE/MAX</span></div>
+      </article>
+      <article class="team-card reveal delay-2">
+        <div class="team-card__photo-wrap"><img src="assets/team/bujinlkham.jpg" alt="Bujinlkham Bold, CSO" class="team-card__photo" width="110" height="110" loading="lazy" /></div>
+        <h3 class="team-card__name" data-i18n="team.bujinlkham.name">Bujinlkham Bold</h3>
+        <p class="team-card__title" data-i18n="team.bujinlkham.title">Chief Strategy Officer & Co-Founder</p>
+        <div class="team-card__bio">
+          <span class="team-card__bio-short" data-i18n="team.bujinlkham.short">Business leader, entrepreneur, and investor with nearly two decades of experience.</span>
+          <span class="team-card__bio-full" data-i18n="team.bujinlkham.full">CEO & Co-Founder of Nano Group and Co-Regional Owner of RE/MAX Mongolia. Recognized among Forbes Mongolia's Top 50 Women Entrepreneurs. Executive MBA candidate at Cambridge Judge Business School.</span>
+          <button class="team-card__read-more" aria-expanded="false">Read more →</button>
+        </div>
+        <div class="team-card__badges"><span class="team-card__badge">Cambridge MBA</span><span class="team-card__badge">Forbes Mongolia</span></div>
+      </article>
+      <article class="team-card reveal delay-3">
+        <div class="team-card__photo-wrap"><img src="assets/team/aditi.jpg" alt="Aditi Goswami, CAIO" class="team-card__photo" width="110" height="110" loading="lazy" /></div>
+        <h3 class="team-card__name" data-i18n="team.aditi.name">Aditi Goswami</h3>
+        <p class="team-card__title" data-i18n="team.aditi.title">Chief AI Officer & Co-Founder</p>
+        <div class="team-card__bio">
+          <span class="team-card__bio-short" data-i18n="team.aditi.short">Internationally recognised AI leader with 15+ years at Boeing and Microsoft.</span>
+          <span class="team-card__bio-full" data-i18n="team.aditi.full">Former Machine Learning Lead at Boeing; AI & Azure Engineer at Microsoft. Master's in Artificial Intelligence with Distinction from the University of St Andrews. Executive MBA candidate at Cambridge Judge Business School.</span>
+          <button class="team-card__read-more" aria-expanded="false">Read more →</button>
+        </div>
+        <div class="team-card__badges"><span class="team-card__badge">Boeing</span><span class="team-card__badge">Microsoft</span></div>
+      </article>
+    </div>
+    <div class="team-grid-bottom">
+      <article class="team-card reveal delay-4">
+        <div class="team-card__photo-wrap"><img src="assets/team/ankesh.jpg" alt="Ankesh Saha, CTO" class="team-card__photo" width="110" height="110" loading="lazy" /></div>
+        <h3 class="team-card__name" data-i18n="team.ankesh.name">Ankesh Saha</h3>
+        <p class="team-card__title" data-i18n="team.ankesh.title">Chief Technology Officer & Co-Founder</p>
+        <div class="team-card__bio">
+          <span class="team-card__bio-short" data-i18n="team.ankesh.short">Technology entrepreneur with 16+ years in fintech and enterprise software. Former Senior Consultant at PwC.</span>
+          <span class="team-card__bio-full" data-i18n="team.ankesh.full">Google Certified Data Analyst and B.Tech (Honours) from NIT India. Leads technology strategy, platform architecture, and product innovation at Khuvsgul AI.</span>
+          <button class="team-card__read-more" aria-expanded="false">Read more →</button>
+        </div>
+        <div class="team-card__badges"><span class="team-card__badge">PwC</span><span class="team-card__badge">Google Certified</span></div>
+      </article>
+      <article class="team-card reveal delay-5">
+        <div class="team-card__photo-wrap"><img src="assets/team/tseesuren.jpg" alt="Tseesuren Oyunjav, CEO" class="team-card__photo" width="110" height="110" loading="lazy" /></div>
+        <h3 class="team-card__name" data-i18n="team.tseesuren.name">Tseesuren Oyunjav</h3>
+        <p class="team-card__title" data-i18n="team.tseesuren.title">Chief Executive Officer</p>
+        <div class="team-card__bio">
+          <span class="team-card__bio-short" data-i18n="team.tseesuren.short">Digital transformation executive with 13+ years in banking and fintech. Former senior leadership at Capitron Bank and LendMN.</span>
+          <span class="team-card__bio-full" data-i18n="team.tseesuren.full">Master's in Economics from Saitama University, Japan. Combines strategic vision and operational excellence to help organisations unlock the full value of AI.</span>
+          <button class="team-card__read-more" aria-expanded="false">Read more →</button>
+        </div>
+        <div class="team-card__badges"><span class="team-card__badge">Capitron Bank</span><span class="team-card__badge">LendMN</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §6  PRODUCTS
+───────────────────────────────────────────────────────────── -->
+<section class="page-hero" id="products" aria-label="Products">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="page-hero__label reveal" data-i18n="products.hero.label">EXECUTIVE INTELLIGENCE</div>
+      <h2 class="page-hero__headline reveal" data-i18n="products.hero.headline">Executive Intelligence Dashboard</h2>
+      <p class="page-hero__sub reveal" data-i18n="products.hero.sub">The Operating System for Business Leaders</p>
+      <p class="page-hero__body reveal" data-i18n="products.hero.body">Most executives spend hours gathering reports. We provide answers instantly. Monitor your business through a single AI-powered dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section features-section" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="features-layout">
+      <div>
+        <div class="features-list-title reveal" data-i18n="products.features.title">Key Insights</div>
+        <div class="features-grid">
+          <div class="feature-badge reveal delay-1"><span class="dot"></span><span data-i18n="products.f1">Revenue Trends</span></div>
+          <div class="feature-badge reveal delay-2"><span class="dot"></span><span data-i18n="products.f2">Profitability Analysis</span></div>
+          <div class="feature-badge reveal delay-3"><span class="dot"></span><span data-i18n="products.f3">Product Performance</span></div>
+          <div class="feature-badge reveal delay-4"><span class="dot"></span><span data-i18n="products.f4">Profit Killers</span></div>
+          <div class="feature-badge reveal delay-5"><span class="dot"></span><span data-i18n="products.f5">Customer Behaviour</span></div>
+          <div class="feature-badge reveal delay-6"><span class="dot"></span><span data-i18n="products.f6">Inventory Optimisation</span></div>
+          <div class="feature-badge reveal delay-1"><span class="dot"></span><span data-i18n="products.f7">Sales Team Performance</span></div>
+          <div class="feature-badge reveal delay-2"><span class="dot"></span><span data-i18n="products.f8">Cash Flow Monitoring</span></div>
+          <div class="feature-badge reveal delay-3"><span class="dot"></span><span data-i18n="products.f9">Demand Forecasting</span></div>
+          <div class="feature-badge reveal delay-4"><span class="dot"></span><span data-i18n="products.f10">AI Recommendations</span></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <img src="assets/images/dashboard-mockup.png" alt="Khuvsgul AI Executive Intelligence Dashboard" class="features-image float-anim" width="600" height="420" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section designed-for-section" aria-labelledby="for-heading">
+  <div class="container text-center">
+    <div class="section-header--center reveal" style="color:var(--text-light);">
+      <span class="section-label" data-i18n="products.for.label">DESIGNED FOR</span>
+      <h2 class="heading-1" id="for-heading" data-i18n="products.for.title">Built for Business Leaders</h2>
+    </div>
+    <div class="designed-for-pills reveal">
+      <span class="designed-for-pill" data-i18n="products.for.1">CEOs</span>
+      <span class="designed-for-pill" data-i18n="products.for.2">Founders</span>
+      <span class="designed-for-pill" data-i18n="products.for.3">Business Owners</span>
+      <span class="designed-for-pill" data-i18n="products.for.4">Board Members</span>
+      <span class="designed-for-pill" data-i18n="products.for.5">CFOs</span>
+      <span class="designed-for-pill" data-i18n="products.for.6">General Managers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §7  SOLUTIONS
+───────────────────────────────────────────────────────────── -->
+<section class="page-hero" id="solutions" aria-label="Solutions">
+  <div class="container">
+    <div class="page-hero__content">
+      <div class="page-hero__label reveal" data-i18n="solutions.hero.label">AI SOLUTIONS</div>
+      <h2 class="page-hero__headline reveal" data-i18n="solutions.hero.headline">AI Solutions That Deliver Real Business Results</h2>
+      <p class="page-hero__body reveal" data-i18n="solutions.hero.body">We build practical AI solutions tailored to your business, not generic tools. Every solution is designed to deliver measurable value from day one.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-light" aria-labelledby="solutions-heading">
+  <div class="container">
+    <div class="section-header--center reveal">
+      <span class="section-label" data-i18n="solutions.cards.title">WHAT WE OFFER</span>
+      <h2 class="heading-1" id="solutions-heading" data-i18n="solutions.cards.title">What We Offer</h2>
+    </div>
+    <div class="solutions-grid">
+      <article class="solution-card reveal delay-1"><div class="solution-card__number">01</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c1.title">Executive Business Intelligence</h3><p class="solution-card__desc" data-i18n="solutions.c1.desc">Real-time visibility into business performance across all key dimensions.</p></article>
+      <article class="solution-card reveal delay-2"><div class="solution-card__number">02</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c2.title">AI Forecasting</h3><p class="solution-card__desc" data-i18n="solutions.c2.desc">Predict sales, demand, inventory, and future profitability with confidence.</p></article>
+      <article class="solution-card reveal delay-3"><div class="solution-card__number">03</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c3.title">Profitability Analytics</h3><p class="solution-card__desc" data-i18n="solutions.c3.desc">Identify hidden opportunities and eliminate profit leaks across your business.</p></article>
+      <article class="solution-card reveal delay-4"><div class="solution-card__number">04</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c4.title">Process Automation</h3><p class="solution-card__desc" data-i18n="solutions.c4.desc">Automate reporting, workflows, approvals, and repetitive tasks.</p></article>
+      <article class="solution-card reveal delay-5"><div class="solution-card__number">05</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c5.title">AI Assistants</h3><p class="solution-card__desc" data-i18n="solutions.c5.desc">Deploy intelligent AI assistants trained on your unique business data.</p></article>
+      <article class="solution-card reveal delay-6"><div class="solution-card__number">06</div><span class="solution-card__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-3.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2zM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-3.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2z"/></svg></span><h3 class="solution-card__title" data-i18n="solutions.c6.title">Decision Intelligence</h3><p class="solution-card__desc" data-i18n="solutions.c6.desc">Receive AI-powered recommendations for faster and better decisions.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section what-ai-section" aria-labelledby="ai-heading">
+  <div class="container">
+    <div class="section-header--center reveal" style="color:var(--text-light);">
+      <span class="section-label" data-i18n="solutions.ai.label">CAPABILITIES</span>
+      <h2 class="heading-1" id="ai-heading" data-i18n="solutions.ai.title">What AI Can Do For Your Business</h2>
+    </div>
+    <div class="what-ai-grid">
+      <div class="what-ai-item reveal delay-1"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23 6l-9.5 9.5-5-5L1 18"/><path d="M17 6h6v6"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.1.verb">Predict</div><p class="what-ai-item__desc" data-i18n="solutions.ai.1.desc">Forecast future sales, demand, inventory, and cash flow.</p></div>
+      <div class="what-ai-item reveal delay-2"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.2.verb">Detect</div><p class="what-ai-item__desc" data-i18n="solutions.ai.2.desc">Identify risks, anomalies, and inefficiencies before they become problems.</p></div>
+      <div class="what-ai-item reveal delay-3"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5.5 5.5 0 0 0 12.5 2.5a5.5 5.5 0 0 0-5 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.3.verb">Recommend</div><p class="what-ai-item__desc" data-i18n="solutions.ai.3.desc">Provide next-best actions based on business performance.</p></div>
+      <div class="what-ai-item reveal delay-4"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.4.verb">Automate</div><p class="what-ai-item__desc" data-i18n="solutions.ai.4.desc">Reduce manual work and repetitive reporting.</p></div>
+      <div class="what-ai-item reveal delay-5"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><path d="M3 20h18"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.5.verb">Optimise</div><p class="what-ai-item__desc" data-i18n="solutions.ai.5.desc">Improve pricing, inventory, staffing, and resource allocation.</p></div>
+      <div class="what-ai-item reveal delay-6"><span class="what-ai-item__icon"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96-.44 2.5 2.5 0 0 1 0-3.12 3 3 0 0 1 0-3.88 2.5 2.5 0 0 1 0-3.12A2.5 2.5 0 0 1 9.5 2zM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96-.44 2.5 2.5 0 0 0 0-3.12 3 3 0 0 0 0-3.88 2.5 2.5 0 0 0 0-3.12A2.5 2.5 0 0 0 14.5 2z"/></svg></span><div class="what-ai-item__verb" data-i18n="solutions.ai.6.verb">Learn</div><p class="what-ai-item__desc" data-i18n="solutions.ai.6.desc">Continuously improve decision quality through data-driven insights.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section serve-section" aria-labelledby="serve-heading">
+  <div class="container text-center">
+    <div class="section-header--center reveal">
+      <span class="section-label" data-i18n="solutions.serve.label">INDUSTRIES</span>
+      <h2 class="heading-1" id="serve-heading" data-i18n="solutions.serve.title">Who We Serve</h2>
+    </div>
+    <div class="serve-tags reveal">
+      <span class="serve-tag" data-i18n="solutions.serve.1">Distribution & FMCG</span>
+      <span class="serve-tag" data-i18n="solutions.serve.2">Retail</span>
+      <span class="serve-tag" data-i18n="solutions.serve.3">Manufacturing</span>
+      <span class="serve-tag" data-i18n="solutions.serve.4">Financial Services</span>
+      <span class="serve-tag" data-i18n="solutions.serve.5">Real Estate</span>
+      <span class="serve-tag" data-i18n="solutions.serve.6">Mining</span>
+      <span class="serve-tag" data-i18n="solutions.serve.7">Logistics</span>
+      <span class="serve-tag" data-i18n="solutions.serve.8">Professional Services</span>
+      <span class="serve-tag" data-i18n="solutions.serve.9">Sports Organisations</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §8  FAQ
+───────────────────────────────────────────────────────────── -->
+<section class="faq-hero" id="faq" aria-label="FAQ hero">
+  <div class="container">
+    <div class="faq-hero__content">
+      <span class="section-label reveal" style="display:block;text-align:center;padding-left:0;" data-i18n="faq.label">FAQ</span>
+      <h2 class="heading-display reveal" data-i18n="faq.hero.headline">Frequently Asked Questions</h2>
+      <p class="reveal" data-i18n="faq.hero.sub">Have questions about AI for your business? We have answers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section faq-section" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-wrapper" role="list">
+      <div class="faq-item reveal delay-1" role="listitem">
+        <button class="faq-question" type="button">
+          <span class="faq-question__number" aria-hidden="true">01</span>
+          <span class="faq-question__text" data-i18n="faq.q1">We don't have an IT team. Can we still implement AI?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p class="faq-answer__lead" data-i18n="faq.a1.lead">Absolutely.</p>
+          <p class="faq-answer__body" data-i18n="faq.a1.body">Many of our clients have no in-house IT department. We manage the entire implementation process and provide ongoing support, ensuring your team can use the solution with confidence from day one.</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal delay-2" role="listitem">
+        <button class="faq-question" type="button">
+          <span class="faq-question__number" aria-hidden="true">02</span>
+          <span class="faq-question__text" data-i18n="faq.q2">Is AI only for large companies?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p class="faq-answer__lead" data-i18n="faq.a2.lead">No.</p>
+          <p class="faq-answer__body" data-i18n="faq.a2.body">Our solutions are specifically designed to be affordable and practical for SMEs as well as larger organisations. Enterprise AI should not be limited to large corporations — our pricing reflects that.</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal delay-3" role="listitem">
+        <button class="faq-question" type="button">
+          <span class="faq-question__number" aria-hidden="true">03</span>
+          <span class="faq-question__text" data-i18n="faq.q3">Do we need clean data to get started?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p class="faq-answer__lead" data-i18n="faq.a3.lead">Not necessarily.</p>
+          <p class="faq-answer__body" data-i18n="faq.a3.body">Most businesses have imperfect data. We help organise and prepare it for meaningful analysis. We don't need all your data — just the key data points needed for decision-making.</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal delay-4" role="listitem">
+        <button class="faq-question" type="button">
+          <span class="faq-question__number" aria-hidden="true">04</span>
+          <span class="faq-question__text" data-i18n="faq.q4">How long does implementation take?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p class="faq-answer__lead" data-i18n="faq.a4.lead">4–8 weeks.</p>
+          <p class="faq-answer__body" data-i18n="faq.a4.body">Most dashboard solutions can be deployed within 4–8 weeks. More complex implementations may take longer, but we always aim to deliver value as quickly as possible.</p>
+        </div></div>
+      </div>
+      <div class="faq-item reveal delay-5" role="listitem">
+        <button class="faq-question" type="button">
+          <span class="faq-question__number" aria-hidden="true">05</span>
+          <span class="faq-question__text" data-i18n="faq.q5">Can you integrate with our existing systems?</span>
+          <span class="faq-chevron" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
+        </button>
+        <div class="faq-answer"><div class="faq-answer__inner">
+          <p class="faq-answer__lead" data-i18n="faq.a5.lead">Yes.</p>
+          <p class="faq-answer__body" data-i18n="faq.a5.body">We work with ERP, accounting software, CRM, POS, Excel, and custom-built systems. Our team handles the technical integration so you don't have to.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
+     §9  CONTACT US
+───────────────────────────────────────────────────────────── -->
+<section class="contact-hero" id="contact" aria-label="Contact hero">
+  <div class="container">
+    <div class="contact-hero__content">
+      <span class="section-label reveal" style="display:block;text-align:center;padding-left:0;" data-i18n="nav.contact">CONTACT US</span>
+      <h2 class="heading-display reveal" data-i18n="contact.hero.headline">Let's Explore What's Possible</h2>
+      <p class="reveal" data-i18n="contact.hero.body">The future belongs to organisations that make faster and better decisions. Whether you're beginning your AI journey or looking to scale existing initiatives, we'd love to learn more about your business.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" aria-labelledby="contact-form-heading">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <div class="contact-form-card">
+          <h2 class="form-title" id="contact-form-heading" data-i18n="contact.form.title">Send Us a Message</h2>
+          <p class="form-subtitle" data-i18n="contact.form.sub">We'll get back to you within 24 hours.</p>
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            <div class="form-success__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3 class="form-success__title" data-i18n="contact.success.title">Message Sent!</h3>
+            <p class="form-success__body" data-i18n="contact.success.body">Thank you for reaching out. We'll be in touch within 24 hours.</p>
+          </div>
+          <!-- Replace YOUR_FORM_ID with your Formspree endpoint -->
+          <form id="contact-form-el" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="field-name"><span data-i18n="contact.form.name">Full Name</span><span class="required">*</span></label>
+                <input type="text" id="field-name" name="name" class="form-input" required autocomplete="name" placeholder="Your full name" data-i18n-attr="placeholder" data-i18n="contact.form.ph.name" />
+                <p class="form-error-msg" id="err-name">Please enter your full name.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-company"><span data-i18n="contact.form.company">Company</span></label>
+                <input type="text" id="field-company" name="company" class="form-input" autocomplete="organization" placeholder="Your company name" data-i18n-attr="placeholder" data-i18n="contact.form.ph.company" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="field-email"><span data-i18n="contact.form.email">Email Address</span><span class="required">*</span></label>
+                <input type="email" id="field-email" name="email" class="form-input" required autocomplete="email" placeholder="you@company.com" data-i18n-attr="placeholder" data-i18n="contact.form.ph.email" />
+                <p class="form-error-msg" id="err-email">Please enter a valid email address.</p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="field-phone"><span data-i18n="contact.form.phone">Phone Number</span></label>
+                <input type="tel" id="field-phone" name="phone" class="form-input" autocomplete="tel" placeholder="+976 ..." data-i18n-attr="placeholder" data-i18n="contact.form.ph.phone" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-message"><span data-i18n="contact.form.message">Message</span><span class="required">*</span></label>
+              <textarea id="field-message" name="message" class="form-textarea" required rows="5" placeholder="Tell us about your business and what you'd like to achieve with AI..." data-i18n-attr="placeholder" data-i18n="contact.form.ph.message"></textarea>
+              <p class="form-error-msg" id="err-message">Please enter your message.</p>
+            </div>
+            <input type="text" name="_gotcha" style="display:none;" tabindex="-1" autocomplete="off" />
+            <button type="submit" class="btn btn--primary form-submit" id="btn-submit" data-i18n="contact.form.submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-aside reveal-right">
+        <div class="consult-card">
+          <div class="consult-card__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3 class="consult-card__title" data-i18n="contact.consult.title">Complimentary 15-Minute AI Consultation</h3>
+          <p class="consult-card__text" data-i18n="contact.consult.text">Discuss your business challenges and discover where AI can create measurable value.</p>
+        </div>
+        <div class="contact-details-card">
+          <div class="contact-detail-item">
+            <div class="contact-detail-item__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="contact-detail-item__label">Email</div><div class="contact-detail-item__value"><a href="mailto:info@khuvsgul.ai" data-i18n="contact.details.email">info@khuvsgul.ai</a></div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-item__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+            <div><div class="contact-detail-item__label">Website</div><div class="contact-detail-item__value"><a href="https://www.khuvsgul.ai" target="_blank" rel="noopener">www.khuvsgul.ai</a></div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-item__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="contact-detail-item__label">Location</div><div class="contact-detail-item__value" data-i18n="contact.details.city">Ulaanbaatar, Mongolia</div></div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-item__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="16"/><line x1="15" y1="22" x2="15" y2="16"/><line x1="9" y1="16" x2="15" y2="16"/><path d="M8 6h2M14 6h2M8 10h2M14 10h2"/></svg></div>
+            <div><div class="contact-detail-item__label">Address</div><div class="contact-detail-item__value" data-i18n="contact.details.address">13th Floor, NM Tower, Mahatma Gandhi Street, Khan-Uul District, Ulaanbaatar</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.1!2d106.9178!3d47.8864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9693f6b6b6b6b6%3A0x1234567890!2sKhan-Uul+District%2C+Ulaanbaatar!5e0!3m2!1sen!2smn!4v1234567890"
+    title="Khuvsgul AI — NM Tower, Ulaanbaatar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════════ -->
+<footer class="bg-dark" style="padding: var(--space-16) 0 var(--space-8);" role="contentinfo">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--space-12);margin-bottom:var(--space-12);">
+      <div>
+        <a href="#home"><img src="assets/images/logo.png" alt="Khuvsgul AI" height="36" loading="lazy" /></a>
+        <p style="font-size:0.88rem;color:var(--text-muted-dark);margin-top:var(--space-4);max-width:280px;line-height:1.7;" data-i18n="footer.tagline">AI doesn't replace leaders. It empowers them to make better decisions.</p>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);" data-i18n="footer.links">Quick Links</div>
+        <ul style="display:flex;flex-direction:column;gap:var(--space-3);">
+          <li><a href="#home"      style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.home">HOME</a></li>
+          <li><a href="#about"     style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.about">ABOUT US</a></li>
+          <li><a href="#products"  style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.products">PRODUCTS</a></li>
+          <li><a href="#solutions" style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.solutions">SOLUTIONS</a></li>
+          <li><a href="#faq"       style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="#contact"   style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.contact">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);" data-i18n="footer.contact-title">Contact</div>
+        <ul style="display:flex;flex-direction:column;gap:var(--space-3);">
+          <li><a href="mailto:info@khuvsgul.ai" style="font-size:0.88rem;color:rgba(255,255,255,0.6);">info@khuvsgul.ai</a></li>
+          <li><a href="https://www.khuvsgul.ai" style="font-size:0.88rem;color:rgba(255,255,255,0.6);">www.khuvsgul.ai</a></li>
+          <li style="font-size:0.88rem;color:rgba(255,255,255,0.5);" data-i18n="contact.details.city">Ulaanbaatar, Mongolia</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--cyan-400);margin-bottom:var(--space-5);">Get Started</div>
+        <a href="#contact" class="btn btn--primary btn--sm" style="width:100%;justify-content:center;" data-i18n="cta.book-demo">BOOK A DEMO</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:var(--space-6);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4);">
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);" data-i18n="footer.copyright">© 2025 Khuvsgul AI. All rights reserved.</p>
+      <p style="font-size:0.8rem;color:rgba(255,255,255,0.3);">khuvsgulai.mn</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════════════════════════════════ -->
+<script src="js/lang.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/main.js"></script>
+<script>
+/* ── Scroll-spy: highlight the active nav link as user scrolls ── */
+(function scrollSpy() {
+  const sections  = ['home','problems','about','products','solutions','faq','contact'];
+  // Map sections to nav links (problems section → "home" is still selected, about → about, etc.)
+  const sectionToNav = {
+    home: 'home', problems: 'home',
+    about: 'about', origin: 'about',
+    products: 'products',
+    solutions: 'solutions',
+    faq: 'faq',
+    contact: 'contact'
+  };
+
+  const navLinks = document.querySelectorAll('.nav__link[data-section], .nav__drawer-link[data-section]');
+
+  function setActive(sectionId) {
+    const navKey = sectionToNav[sectionId] ?? sectionId;
+    navLinks.forEach(link => {
+      const isActive = link.dataset.section === navKey;
+      link.classList.toggle('spy-active', isActive);
+    });
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setActive(entry.target.id);
+      }
+    });
+  }, {
+    rootMargin: '-30% 0px -60% 0px',  // triggers when section is ~40% visible
+    threshold: 0
+  });
+
+  // Observe all sections that have an id matching nav sections
+  document.querySelectorAll('section[id]').forEach(sec => observer.observe(sec));
+})();
+
+/* ── Contact form submission (Formspree) ── */
+document.addEventListener('DOMContentLoaded', () => {
+  const form    = document.getElementById('contact-form-el');
+  const success = document.getElementById('form-success');
+  const btn     = document.getElementById('btn-submit');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    let valid = true;
+
+    ['name','email','message'].forEach(f => {
+      const el  = form.elements[f];
+      const err = document.getElementById(`err-${f}`);
+      if (!el?.value.trim()) {
+        el?.classList.add('error'); err?.classList.add('visible'); valid = false;
+      } else {
+        el?.classList.remove('error'); err?.classList.remove('visible');
+      }
+    });
+
+    const emailEl = form.elements['email'];
+    if (emailEl?.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) {
+      emailEl.classList.add('error');
+      document.getElementById('err-email')?.classList.add('visible');
+      valid = false;
+    }
+
+    if (!valid) return;
+
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, { method:'POST', body: new FormData(form), headers:{ Accept:'application/json' } });
+      if (res.ok) { form.style.display='none'; success.classList.add('visible'); }
+      else throw new Error();
+    } catch {
+      btn.textContent = 'Try Again';
+      btn.disabled = false;
+      alert('Something went wrong. Please email us at info@khuvsgul.ai');
+    }
+  });
+
+  form.querySelectorAll('.form-input, .form-textarea').forEach(el => {
+    el.addEventListener('input', () => {
+      el.classList.remove('error');
+      document.getElementById(`err-${el.name}`)?.classList.remove('visible');
+    });
+  });
+});
+</script>
+</body>
+</html>

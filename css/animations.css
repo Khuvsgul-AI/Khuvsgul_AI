@@ -1,0 +1,189 @@
+/* ============================================================
+   ANIMATIONS & SCROLL REVEAL
+   animations.css
+   ============================================================ */
+
+/* ── Scroll Reveal Base ───────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
+              transform 0.65s cubic-bezier(0.4,0,0.2,1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
+              transform 0.65s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.65s cubic-bezier(0.4,0,0.2,1),
+              transform 0.65s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1),
+              transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger delays */
+.delay-1  { transition-delay: 80ms; }
+.delay-2  { transition-delay: 160ms; }
+.delay-3  { transition-delay: 240ms; }
+.delay-4  { transition-delay: 320ms; }
+.delay-5  { transition-delay: 400ms; }
+.delay-6  { transition-delay: 480ms; }
+.delay-7  { transition-delay: 560ms; }
+.delay-8  { transition-delay: 640ms; }
+
+/* ── Hero Entrance ────────────────────────────────────────── */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.hero-animate {
+  animation: heroFadeUp 0.9s cubic-bezier(0.4,0,0.2,1) both;
+}
+.hero-animate-1 { animation-delay: 0.1s; }
+.hero-animate-2 { animation-delay: 0.25s; }
+.hero-animate-3 { animation-delay: 0.4s; }
+.hero-animate-4 { animation-delay: 0.55s; }
+.hero-animate-5 { animation-delay: 0.7s; }
+
+/* ── Pulse Glow (CTA buttons) ─────────────────────────────── */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(0,102,204,0.35), 0 0 0 0 rgba(0,168,232,0);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(0,102,204,0.35), 0 0 0 8px rgba(0,168,232,0.08);
+  }
+}
+
+.btn--primary {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+.btn--primary:hover {
+  animation: none;
+}
+
+/* ── Floating (dashboard mockup) ──────────────────────────── */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+
+.float-anim {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* ── Scroll Chevron Bounce ────────────────────────────────── */
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50%       { transform: translateY(8px); opacity: 1; }
+}
+
+.scroll-indicator {
+  animation: bounceDown 2s ease-in-out infinite;
+}
+
+/* ── Timeline Step Reveal ─────────────────────────────────── */
+@keyframes stepPop {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── Shimmer (loading skeleton) ───────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg,
+    rgba(255,255,255,0.04) 0%,
+    rgba(255,255,255,0.12) 50%,
+    rgba(255,255,255,0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* ── Particle Canvas ──────────────────────────────────────── */
+#particle-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 2;  /* above overlay (z:1), below content (z:3) */
+}
+
+/* ── Glow border rotate (section accents) ─────────────────── */
+@keyframes rotateBorder {
+  to { background-position: 300% center; }
+}
+
+.border-glow-anim {
+  background: linear-gradient(90deg,
+    var(--blue-500),
+    var(--cyan-400),
+    var(--blue-500)
+  );
+  background-size: 200% auto;
+  animation: rotateBorder 3s linear infinite;
+}
+
+/* ── Number Counter (stats) ───────────────────────────────── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Typing cursor for hero headline ──────────────────────── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}

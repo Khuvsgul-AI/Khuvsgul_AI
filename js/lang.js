@@ -1,0 +1,638 @@
+/* ============================================================
+   BILINGUAL TRANSLATIONS — English + Mongolian
+   js/lang.js
+   ============================================================ */
+
+const TRANSLATIONS = {
+  en: {
+    /* NAV */
+    "nav.home":      "HOME",
+    "nav.about":     "ABOUT US",
+    "nav.products":  "PRODUCTS",
+    "nav.solutions": "SOLUTIONS",
+    "nav.faq":       "FAQ",
+    "nav.contact":   "CONTACT US",
+    "nav.tagline":   "Mongolia & Central Asia",
+
+    /* FOOTER */
+    "footer.tagline": "AI doesn't replace leaders. It empowers them to make better decisions.",
+    "footer.copyright": "© 2025 Khuvsgul AI. All rights reserved.",
+    "footer.links":  "Quick Links",
+    "footer.contact-title": "Contact",
+
+    /* HOME HERO */
+    "home.hero.eyebrow":    "AI-Powered Business Intelligence",
+    "home.hero.headline1":  "AI That Helps Leaders",
+    "home.hero.headline2":  "Make Better Decisions",
+    "home.hero.sub":        "Most businesses don't need more data. They need better decisions.",
+    "home.hero.body":       "Khuvsgul AI helps business owners, CEOs, and leadership teams transform complex business data into clear, actionable insights through AI-powered dashboards, forecasting tools, and intelligent automation.",
+    "home.hero.cta1":       "BOOK A DEMO",
+    "home.hero.cta2":       "LEARN MORE",
+    "home.hero.scroll":     "Scroll to explore",
+
+    /* HOME — QUESTIONS */
+    "home.q.label":   "THE PROBLEMS WE SOLVE",
+    "home.q.title":   "Questions We Help You Answer",
+    "home.q.sub":     "Stop guessing. Start knowing.",
+    "home.q.1":  "What is driving our profitability?",
+    "home.q.2":  "Which products generate profit and which destroy it?",
+    "home.q.3":  "What will sales look like next month?",
+    "home.q.4":  "How is seasonality affecting performance?",
+    "home.q.5":  "Where are the biggest growth opportunities?",
+    "home.q.6":  "What should we do next?",
+    "home.q.tagline":       "All in one place.",
+    "home.q.tagline2":      "In real time.",
+
+    /* HOME — ACHIEVEMENTS */
+    "home.achieve.label":   "OUTCOMES",
+    "home.achieve.title":   "What We Help You Achieve",
+    "home.achieve.1":  "Increase profitability",
+    "home.achieve.2":  "Improve decision quality",
+    "home.achieve.3":  "Gain complete visibility",
+    "home.achieve.4":  "Reduce manual reporting",
+    "home.achieve.5":  "Forecast future performance",
+    "home.achieve.6":  "Identify growth opportunities",
+    "home.achieve.7":  "Make data-driven decisions faster",
+    "home.achieve.8":  "Build a culture of accountability",
+    "home.achieve.cta": "CONTACT US",
+
+    /* HOME — WHY FAIL */
+    "home.fail.label":      "OUR DIFFERENCE",
+    "home.fail.title":      "Why Most AI Projects Fail",
+    "home.fail.col1":       "Common Challenges",
+    "home.fail.col2":       "The Khuvsgul AI Approach",
+    "home.fail.p1":   "Start with technology instead of business problems",
+    "home.fail.p2":   "Fragmented, difficult-to-use data",
+    "home.fail.p3":   "Solutions too complex for the team",
+    "home.fail.p4":   "Internal teams lack AI expertise",
+    "home.fail.p5":   "Enterprise software too expensive",
+    "home.fail.p6":   "Cannot measure ROI",
+    "home.fail.s1":   "We begin with what leaders need most",
+    "home.fail.s2":   "We build practical AI solutions that create measurable business value",
+    "home.fail.s3":   "No unnecessary complexity. No expensive enterprise platforms. Just solutions that work.",
+
+    /* HOME — DEMO */
+    "home.demo.label":  "EXECUTIVE DASHBOARD",
+    "home.demo.title":  "See your business through a completely different lens",
+    "home.demo.body":   "Our AI-powered Executive Dashboard gives leadership teams instant visibility into every dimension of business performance.",
+    "home.demo.cta":    "BOOK A DEMO",
+    "home.demo.pill1":  "Revenue",
+    "home.demo.pill2":  "Profitability",
+    "home.demo.pill3":  "Inventory",
+    "home.demo.pill4":  "Cash Flow",
+    "home.demo.pill5":  "Customer Trends",
+    "home.demo.pill6":  "Sales Performance",
+    "home.demo.pill7":  "Forecasting",
+    "home.demo.pill8":  "Business Risks",
+
+    /* ABOUT HERO */
+    "about.hero.headline":  "From Cambridge to Central Asia",
+    "about.hero.pullquote": "\"Artificial Intelligence should be practical, accessible, and valuable for businesses.\"",
+
+    /* ABOUT — ORIGIN */
+    "about.origin.label": "OUR STORY",
+    "about.origin.title": "How It All Began",
+    "about.origin.badge1": "Cambridge Judge Business School",
+    "about.origin.badge2": "Mongolia & Central Asia",
+    "about.origin.badge3": "Joint Venture",
+    "about.origin.p1": "The idea began at the University of Cambridge Judge Business School, where two classmates — an AI scientist and a business leader — discovered a shared vision. One brought deep expertise in artificial intelligence, machine learning, and enterprise technology. The other brought years of experience scaling businesses and understanding the challenges business owners face every day.",
+    "about.origin.p2": "Together, supported by the Cambridge ecosystem and global networks, they founded Khuvsgul AI. Today, Khuvsgul AI combines world-class AI capabilities with practical business leadership to help organisations across Mongolia and Central Asia unlock the true value of their data.",
+
+    /* ABOUT — MISSION */
+    "about.mission.label":        "PURPOSE",
+    "about.mission.title":        "Mission & Vision",
+    "about.mission.card1.label":  "OUR MISSION",
+    "about.mission.card1.title":  "Making AI Practical for Every Business",
+    "about.mission.card1.text":   "To make Artificial Intelligence practical, affordable, and accessible for every business — regardless of size, industry, or technical capability.",
+    "about.mission.card2.label":  "OUR VISION",
+    "about.mission.card2.title":  "Most Trusted AI Partner in Central Asia",
+    "about.mission.card2.text":   "To become the most trusted AI transformation partner in Mongolia and Central Asia, helping organisations of all sizes make better decisions faster.",
+
+    /* ABOUT — WHY CHOOSE */
+    "about.why.label": "WHY CHOOSE US",
+    "about.why.title": "Why Businesses Choose Khuvsgul AI",
+    "about.why.1.icon": "",
+    "about.why.1.title": "Business First. Technology Second.",
+    "about.why.1.text":  "We start with business outcomes, not algorithms. Every solution is designed to solve a real problem and deliver measurable value.",
+    "about.why.2.icon": "",
+    "about.why.2.title": "International Expertise",
+    "about.why.2.text":  "Our team includes AI leaders from Boeing, Microsoft, PwC, fintech companies, and globally recognised academic institutions.",
+    "about.why.3.icon": "",
+    "about.why.3.title": "Affordable Solutions",
+    "about.why.3.text":  "Enterprise AI should not be limited to large corporations. Our solutions are designed to be accessible for businesses of all sizes.",
+    "about.why.4.icon": "",
+    "about.why.4.title": "Practical Implementation",
+    "about.why.4.text":  "We focus on measurable results, not theoretical models. Our approach ensures rapid deployment and quick return on investment.",
+    "about.why.5.icon": "",
+    "about.why.5.title": "Long-Term Partnership",
+    "about.why.5.text":  "We grow with our clients and support them throughout their entire AI journey, from first deployment to enterprise scale.",
+
+    /* ABOUT — TEAM */
+    "about.team.label":  "EXECUTIVE TEAM",
+    "about.team.title":  "The People Behind Khuvsgul AI",
+    "about.team.read-more":  "Read more →",
+    "about.team.read-less":  "Read less ↑",
+
+    "team.batbaatar.name":   "Batbaatar Narantuya",
+    "team.batbaatar.title":  "Chairman & Co-Founder",
+    "team.batbaatar.short":  "Entrepreneur, executive coach, and business leader with 25+ years scaling businesses across FMCG, real estate, and business services.",
+    "team.batbaatar.full":   "As Chairman and Co-Founder of Nano Group, he successfully led the growth of multiple companies, including scaling Nano International more than 20x and helping build RE/MAX Mongolia into one of the largest RE/MAX regions in Asia-Pacific with more than 1,800 agents. He holds a Master's Degree in Applied Project Management from the University of Adelaide, Australia.",
+
+    "team.bujinlkham.name":   "Bujinlkham Bold",
+    "team.bujinlkham.title":  "Chief Strategy Officer & Co-Founder",
+    "team.bujinlkham.short":  "Business leader, entrepreneur, and investor with nearly two decades of experience across FMCG, retail, real estate, and energy.",
+    "team.bujinlkham.full":   "CEO & Co-Founder of Nano Group and Co-Regional Owner of RE/MAX Mongolia. Recognized among Forbes Mongolia's Top 50 Women Entrepreneurs. Holds a Master of Nanotechnology from Flinders University, Australia, and is an Executive MBA candidate at Cambridge Judge Business School.",
+
+    "team.aditi.name":   "Aditi Goswami",
+    "team.aditi.title":  "Chief AI Officer & Co-Founder",
+    "team.aditi.short":  "Internationally recognised AI leader with 15+ years of technology experience, including 8+ years in AI, ML, and computer vision at Boeing and Microsoft.",
+    "team.aditi.full":   "Former Machine Learning Lead & Lead Data Scientist at Boeing; AI & Azure Engineer at Microsoft. Holds a Master's in Artificial Intelligence with Distinction from the University of St Andrews, UK, and is an Executive MBA candidate at Cambridge Judge Business School.",
+
+    "team.ankesh.name":   "Ankesh Saha",
+    "team.ankesh.title":  "Chief Technology Officer & Co-Founder",
+    "team.ankesh.short":  "Technology entrepreneur and AI strategist with 16+ years across fintech, enterprise software, and climate technology. Former Senior Consultant at PwC.",
+    "team.ankesh.full":   "Holds a B.Tech (Honours) in Electronics Engineering from NIT India and is a Google Certified Data Analyst. Leads technology strategy, platform architecture, and product innovation at Khuvsgul AI.",
+
+    "team.tseesuren.name":   "Tseesuren Oyunjav",
+    "team.tseesuren.title":  "Chief Executive Officer",
+    "team.tseesuren.short":  "Digital transformation and fintech executive with 13+ years leading innovation across banking and financial services. Former senior leadership at Capitron Bank and LendMN.",
+    "team.tseesuren.full":   "Holds a Master's in Economics from Saitama University, Japan, and a BBA from the National University of Mongolia. Combines strategic vision and operational excellence to help organisations unlock the full value of AI.",
+
+    /* ABOUT — APPROACH */
+    "about.approach.label":  "OUR METHODOLOGY",
+    "about.approach.title":  "Our Approach",
+    "about.approach.sub":    "Start Small. Scale Smart.",
+    "about.approach.intro":  "Most organisations don't need a million-dollar AI transformation project. They need answers.",
+    "about.approach.step1.title": "Connect business data",
+    "about.approach.step2.title": "Build executive visibility",
+    "about.approach.step3.title": "Identify opportunities",
+    "about.approach.step4.title": "Implement AI forecasting",
+    "about.approach.step5.title": "Automate decisions",
+    "about.approach.callout": "This approach reduces risk while delivering value quickly.",
+
+    /* PRODUCTS */
+    "products.hero.label":   "EXECUTIVE INTELLIGENCE",
+    "products.hero.headline":"Executive Intelligence Dashboard",
+    "products.hero.sub":     "The Operating System for Business Leaders",
+    "products.hero.body":    "Most executives spend hours gathering reports. We provide answers instantly. Monitor your business through a single AI-powered dashboard.",
+    "products.features.title": "Key Insights",
+    "products.f1":  "Revenue Trends",
+    "products.f2":  "Profitability Analysis",
+    "products.f3":  "Product Performance",
+    "products.f4":  "Profit Killers",
+    "products.f5":  "Customer Behaviour",
+    "products.f6":  "Inventory Optimisation",
+    "products.f7":  "Sales Team Performance",
+    "products.f8":  "Cash Flow Monitoring",
+    "products.f9":  "Demand Forecasting",
+    "products.f10": "AI Recommendations",
+    "products.for.label":    "DESIGNED FOR",
+    "products.for.title":    "Built for Business Leaders",
+    "products.for.1": "CEOs",
+    "products.for.2": "Founders",
+    "products.for.3": "Business Owners",
+    "products.for.4": "Board Members",
+    "products.for.5": "CFOs",
+    "products.for.6": "General Managers",
+    "products.cta.title": "Ready to see your business through a completely different lens?",
+    "products.cta.btn":   "BOOK A DEMO",
+
+    /* SOLUTIONS */
+    "solutions.hero.label":   "AI SOLUTIONS",
+    "solutions.hero.headline":"AI Solutions That Deliver Real Business Results",
+    "solutions.hero.body":    "We build practical AI solutions tailored to your business, not generic tools. Every solution is designed to deliver measurable value from day one.",
+    "solutions.cards.title":  "What We Offer",
+    "solutions.c1.title": "Executive Business Intelligence",
+    "solutions.c1.desc":  "Real-time visibility into business performance across all key dimensions.",
+    "solutions.c2.title": "AI Forecasting",
+    "solutions.c2.desc":  "Predict sales, demand, inventory, and future profitability with confidence.",
+    "solutions.c3.title": "Profitability Analytics",
+    "solutions.c3.desc":  "Identify hidden opportunities and eliminate profit leaks across your business.",
+    "solutions.c4.title": "Process Automation",
+    "solutions.c4.desc":  "Automate reporting, workflows, approvals, and repetitive tasks.",
+    "solutions.c5.title": "AI Assistants",
+    "solutions.c5.desc":  "Deploy intelligent AI assistants trained on your unique business data.",
+    "solutions.c6.title": "Decision Intelligence",
+    "solutions.c6.desc":  "Receive AI-powered recommendations for faster and better decisions.",
+    "solutions.ai.label": "CAPABILITIES",
+    "solutions.ai.title": "What AI Can Do For Your Business",
+    "solutions.ai.1.verb": "Predict",
+    "solutions.ai.1.desc": "Forecast future sales, demand, inventory, and cash flow.",
+    "solutions.ai.2.verb": "Detect",
+    "solutions.ai.2.desc": "Identify risks, anomalies, and inefficiencies before they become problems.",
+    "solutions.ai.3.verb": "Recommend",
+    "solutions.ai.3.desc": "Provide next-best actions based on business performance.",
+    "solutions.ai.4.verb": "Automate",
+    "solutions.ai.4.desc": "Reduce manual work and repetitive reporting.",
+    "solutions.ai.5.verb": "Optimise",
+    "solutions.ai.5.desc": "Improve pricing, inventory, staffing, and resource allocation.",
+    "solutions.ai.6.verb": "Learn",
+    "solutions.ai.6.desc": "Continuously improve decision quality through data-driven insights.",
+    "solutions.serve.label": "INDUSTRIES",
+    "solutions.serve.title": "Who We Serve",
+    "solutions.serve.1":  "Distribution & FMCG",
+    "solutions.serve.2":  "Retail",
+    "solutions.serve.3":  "Manufacturing",
+    "solutions.serve.4":  "Financial Services",
+    "solutions.serve.5":  "Real Estate",
+    "solutions.serve.6":  "Mining",
+    "solutions.serve.7":  "Logistics",
+    "solutions.serve.8":  "Professional Services",
+    "solutions.serve.9":  "Sports Organisations",
+    "solutions.cta.btn":  "BOOK A DEMO",
+
+    /* FAQ */
+    "faq.hero.headline": "Frequently Asked Questions",
+    "faq.hero.sub":      "Have questions about AI for your business? We have answers.",
+    "faq.label":         "FAQ",
+    "faq.title":         "Common Questions",
+    "faq.q1":   "We don't have an IT team. Can we still implement AI?",
+    "faq.a1.lead": "Absolutely.",
+    "faq.a1.body": "Many of our clients have no in-house IT department. We manage the entire implementation process and provide ongoing support, ensuring your team can use the solution with confidence from day one.",
+    "faq.q2":   "Is AI only for large companies?",
+    "faq.a2.lead": "No.",
+    "faq.a2.body": "Our solutions are specifically designed to be affordable and practical for SMEs as well as larger organisations. Enterprise AI should not be limited to large corporations — our pricing reflects that.",
+    "faq.q3":   "Do we need clean data to get started?",
+    "faq.a3.lead": "Not necessarily.",
+    "faq.a3.body": "Most businesses have imperfect data. We help organise and prepare it for meaningful analysis. We don't need all your data — just the key data points needed for decision-making.",
+    "faq.q4":   "How long does implementation take?",
+    "faq.a4.lead": "4–8 weeks.",
+    "faq.a4.body": "Most dashboard solutions can be deployed within 4–8 weeks. More complex implementations may take longer, but we always aim to deliver value as quickly as possible.",
+    "faq.q5":   "Can you integrate with our existing systems?",
+    "faq.a5.lead": "Yes.",
+    "faq.a5.body": "We work with ERP, accounting software, CRM, POS, Excel, and custom-built systems. Our team handles the technical integration so you don't have to.",
+    "faq.cta.title": "Still have questions?",
+    "faq.cta.body":  "Our team is happy to answer any questions about AI for your business — no obligation.",
+    "faq.cta.btn":   "GET IN TOUCH",
+
+    /* CONTACT */
+    "contact.hero.headline": "Let's Explore What's Possible",
+    "contact.hero.body":     "The future belongs to organisations that make faster and better decisions. Whether you're beginning your AI journey or looking to scale existing initiatives, we'd love to learn more about your business.",
+    "contact.form.title":    "Send Us a Message",
+    "contact.form.sub":      "We'll get back to you within 24 hours.",
+    "contact.form.name":     "Full Name",
+    "contact.form.company":  "Company",
+    "contact.form.email":    "Email Address",
+    "contact.form.phone":    "Phone Number",
+    "contact.form.message":  "Message",
+    "contact.form.ph.name":  "Your full name",
+    "contact.form.ph.company": "Your company name",
+    "contact.form.ph.email": "you@company.com",
+    "contact.form.ph.phone": "+976 ...",
+    "contact.form.ph.message":"Tell us about your business and what you'd like to achieve with AI...",
+    "contact.form.submit":   "SEND MESSAGE",
+    "contact.success.title": "Message Sent!",
+    "contact.success.body":  "Thank you for reaching out. We'll be in touch within 24 hours.",
+    "contact.consult.title": "Complimentary 15-Minute AI Consultation",
+    "contact.consult.text":  "Discuss your business challenges and discover where AI can create measurable value. Book a free consultation with our team.",
+    "contact.details.email": "info@khuvsgul.ai",
+    "contact.details.web":   "www.khuvsgul.ai",
+    "contact.details.city":  "Ulaanbaatar, Mongolia",
+    "contact.details.address":"13th Floor, NM Tower, Mahatma Gandhi Street, 15th Khoroo, Khan-Uul District, Ulaanbaatar",
+
+    /* SHARED */
+    "cta.book-demo":    "BOOK A DEMO",
+    "cta.contact-us":  "CONTACT US",
+    "cta.learn-more":  "LEARN MORE",
+  },
+
+  mn: {
+    /* NAV */
+    "nav.home":      "НҮҮР ХУУДАС",
+    "nav.about":     "БИДНИЙ ТУХАЙ",
+    "nav.products":  "БҮТЭЭГДЭХҮҮН",
+    "nav.solutions": "ШИЙДЛҮҮД",
+    "nav.faq":       "АСУУЛТУУД",
+    "nav.contact":   "ХОЛБОГДОХ",
+    "nav.tagline":   "Монгол ба Төв Ази",
+
+    /* FOOTER */
+    "footer.tagline": "AI нь удирдагчдыг орлохгүй. Харин илүү зөв шийдвэр гаргахад нь хүчирхэгжүүлнэ.",
+    "footer.copyright": "© 2025 Khuvsgul AI. Бүх эрх хамгаалагдсан.",
+    "footer.links":  "Хурдан холбоос",
+    "footer.contact-title": "Холбоо барих",
+
+    /* HOME HERO */
+    "home.hero.eyebrow":    "AI-д суурилсан бизнесийн ухаалаг шийдэл",
+    "home.hero.headline1":  "Удирдагчдад Илүү Сайн",
+    "home.hero.headline2":  "Шийдвэр Гаргахад Туслах AI",
+    "home.hero.sub":        "Ихэнх бизнесүүдэд илүү их дата биш, илүү сайн шийдвэр гаргах боломж хэрэгтэй.",
+    "home.hero.body":       "Khuvsgul AI нь бизнесийн эзэд, гүйцэтгэх захирал болон манлайллын багуудад нарийн бизнесийн өгөгдлийг AI-д суурилсан дашбоард, таамаглалын хэрэгсэл, ухаалаг автоматжуулалтаар дамжуулан тодорхой, ойлгомжтой ойлголт болгон хөрвүүлэхэд тусалдаг.",
+    "home.hero.cta1":       "ДЕМО ЗАХИАЛАХ",
+    "home.hero.cta2":       "ДЭЛГЭРЭНГҮЙ",
+    "home.hero.scroll":     "Доош гүйлгэх",
+
+    /* HOME — QUESTIONS */
+    "home.q.label":   "ШИЙДДЭГ АСУУДЛУУД",
+    "home.q.title":   "Бидний Хариулж Буй Асуултууд",
+    "home.q.sub":     "Таамаглалыг зогсоо. Мэдэж эхэл.",
+    "home.q.1":  "Манай ашигт ажиллагааг юу хөдөлгөж байна вэ?",
+    "home.q.2":  "Аль бүтээгдэхүүн ашиг бий болгож, аль нь ашгийг бууруулж байна вэ?",
+    "home.q.3":  "Дараа сард борлуулалт ямар байх вэ?",
+    "home.q.4":  "Улирлын хэлбэлзэл гүйцэтгэлд хэрхэн нөлөөлж байна вэ?",
+    "home.q.5":  "Хамгийн том өсөлтийн боломжууд хаана байна вэ?",
+    "home.q.6":  "Бид юу хийх ёстой вэ?",
+    "home.q.tagline":       "Нэг дор. Бодит цаг хугацаанд.",
+    "home.q.tagline2":      "",
+
+    /* HOME — ACHIEVEMENTS */
+    "home.achieve.label":   "ҮР ДҮН",
+    "home.achieve.title":   "Бид Танд Юуг Хийж Өгөх Вэ",
+    "home.achieve.1":  "Ашигт ажиллагааг нэмэгдүүлэх",
+    "home.achieve.2":  "Шийдвэрийн чанарыг сайжруулах",
+    "home.achieve.3":  "Бүрэн харагдах байдлыг хангах",
+    "home.achieve.4":  "Гараар хийх тайланг багасгах",
+    "home.achieve.5":  "Ирээдүйн гүйцэтгэлийг таамаглах",
+    "home.achieve.6":  "Өсөлтийн боломжуудыг тодорхойлох",
+    "home.achieve.7":  "Өгөгдөлд суурилсан шийдвэрийг хурдан гаргах",
+    "home.achieve.8":  "Хариуцлагын соёлыг бий болгох",
+    "home.achieve.cta": "ХОЛБОГДОХ",
+
+    /* HOME — WHY FAIL */
+    "home.fail.label":      "БИДНИЙ ОНЦЛОГ",
+    "home.fail.title":      "Яагаад Ихэнх AI Төслүүд Бүтэлгүйтдэг Вэ",
+    "home.fail.col1":       "Нийтлэг Сорилтууд",
+    "home.fail.col2":       "Khuvsgul AI-н Арга Барил",
+    "home.fail.p1":   "Бизнесийн асуудлын оронд технологиос эхэлдэг",
+    "home.fail.p2":   "Тарааж бутарсан, ашиглахад хүндрэлтэй дата",
+    "home.fail.p3":   "Шийдэл нь баг хэрэглэхэд хэт нарийн төвөгтэй",
+    "home.fail.p4":   "Дотоодын баг AI-н мэдлэггүй",
+    "home.fail.p5":   "Корпорацийн программ хангамж хэт үнэтэй",
+    "home.fail.p6":   "ROI-г хэмжих боломжгүй",
+    "home.fail.s1":   "Бид удирдагчдад хамгийн их хэрэгтэй зүйлсээс эхэлдэг",
+    "home.fail.s2":   "Бид бизнесийн бодит үнэ цэнэ бий болгодог практик AI шийдлүүдийг бүтээдэг",
+    "home.fail.s3":   "Шаардлагагүй нарийн төвөгтэй байдал. Үнэтэй корпорацийн платформ байхгүй. Зөвхөн ажилладаг шийдлүүд.",
+
+    /* HOME — DEMO */
+    "home.demo.label":  "ГҮЙЦЭТГЭХ ДАШБОАРД",
+    "home.demo.title":  "Бизнесээ бүрэн өөр өнцгөөс хар",
+    "home.demo.body":   "Манай AI-д суурилсан Гүйцэтгэх Дашбоард нь манлайллын багуудад бизнесийн гүйцэтгэлийн бүх хэмжигдэхүүнийг шууд харуулдаг.",
+    "home.demo.cta":    "ДЕМО ЗАХИАЛАХ",
+    "home.demo.pill1":  "Орлого",
+    "home.demo.pill2":  "Ашигт ажиллагаа",
+    "home.demo.pill3":  "Бараа материал",
+    "home.demo.pill4":  "Мөнгөн урсгал",
+    "home.demo.pill5":  "Хэрэглэгчийн чиг хандлага",
+    "home.demo.pill6":  "Борлуулалтын гүйцэтгэл",
+    "home.demo.pill7":  "Таамаглал",
+    "home.demo.pill8":  "Бизнесийн эрсдэл",
+
+    /* ABOUT HERO */
+    "about.hero.headline":  "Кэмбрижээс Төв Ази Хүртэл",
+    "about.hero.pullquote": "\"Хиймэл оюун ухаан нь практик, хүртээмжтэй бөгөөд бизнесүүдэд үнэ цэнэтэй байх ёстой.\"",
+
+    /* ABOUT — ORIGIN */
+    "about.origin.label": "БИДНИЙ ТҮҮХ",
+    "about.origin.title": "Хэрхэн Эхэлсэн Бэ",
+    "about.origin.badge1": "Кэмбрижийн Judge Бизнес Сургууль",
+    "about.origin.badge2": "Монгол ба Төв Ази",
+    "about.origin.badge3": "Хамтарсан Хэрэгжилт",
+    "about.origin.p1": "Санаа нь Кэмбрижийн их сургуулийн Judge бизнес сургуульд хоёр ангийнхан — AI эрдэмтэн болон бизнесийн удирдагч — хамтын алсын харааг нээж илрүүлснээр төрсөн. Нэг нь хиймэл оюун ухаан, машин сургалт, байгууллагын технологийн чиглэлээр гүн мэдлэгтэй байсан. Нөгөөх нь бизнесийг томруулж, бизнесийн эзэдийн өдөр тутам тулгардаг сорилтуудыг ойлгох олон жилийн туршлагатай байсан.",
+    "about.origin.p2": "Кэмбрижийн экосистем болон дэлхийн сүлжээний дэмжлэгтэйгээр хамтдаа Khuvsgul AI-г үүсгэн байгуулсан. Өнөөдөр Khuvsgul AI нь Монгол болон Төв Азийн байгууллагуудад өгөгдлийнхөө үнэт мөн чанарыг нээхэд туслахын тулд дэлхийн түвшний AI чадамж болон практик бизнесийн манлайллыг хослуулдаг.",
+
+    /* ABOUT — MISSION */
+    "about.mission.label":        "ЗОРИЛГО",
+    "about.mission.title":        "Эрхэм Зорилго ба Алсын Хараа",
+    "about.mission.card1.label":  "ЭРХЭМ ЗОРИЛГО",
+    "about.mission.card1.title":  "AI-г Хүн Бүрд Хүртээмжтэй Болгох",
+    "about.mission.card1.text":   "Хиймэл оюун ухааныг хэмжээ, салбар, техникийн чадавхиас үл хамааран хүн бүрийн бизнест практик, боломжийн үнэтэй, хүртээмжтэй болгох.",
+    "about.mission.card2.label":  "АЛСЫН ХАРАА",
+    "about.mission.card2.title":  "Төв Азийн Хамгийн Итгэлтэй AI Түнш",
+    "about.mission.card2.text":   "Монгол болон Төв Азид хамгийн итгэлтэй AI шилжилтийн түнш болж, бүх хэмжээний байгууллагуудад илүү хурдан, илүү сайн шийдвэр гаргахад туслах.",
+
+    /* ABOUT — WHY CHOOSE */
+    "about.why.label": "ЯАГААД БИДНИЙГ СОНГОХ ВЭ",
+    "about.why.title": "Бизнесүүд Яагаад Khuvsgul AI-г Сонгодог Вэ",
+    "about.why.1.icon": "",
+    "about.why.1.title": "Бизнес Эхэлж, Технологи Дагадаг.",
+    "about.why.1.text":  "Бид алгоритмаас биш бизнесийн үр дүнгээс эхэлдэг. Бүх шийдэл нь бодит асуудал шийдэж, хэмжигдэхүйц үнэ цэнэ бий болгохоор зориулагдсан.",
+    "about.why.2.icon": "",
+    "about.why.2.title": "Олон Улсын Туршлага",
+    "about.why.2.text":  "Манай баг Boeing, Microsoft, PwC, финтек компани болон дэлхийд хүлээн зөвшөөрөгдсөн боловсролын байгууллагуудаас AI удирдагчдыг багтаасан.",
+    "about.why.3.icon": "",
+    "about.why.3.title": "Боломжийн Үнэтэй Шийдлүүд",
+    "about.why.3.text":  "Корпорацийн AI зөвхөн томоохон компаниудаар хязгаарлагдаж болохгүй. Манай шийдлүүд нь бүх хэмжээний бизнесүүдэд хүртээмжтэй байхаар зориулагдсан.",
+    "about.why.4.icon": "",
+    "about.why.4.title": "Практик Хэрэгжилт",
+    "about.why.4.text":  "Бид онолын загваруудын оронд хэмжигдэхүйц үр дүнд анхаарлаа хандуулдаг. Манай арга барил нь хурдан байршуулалт болон хурдан хөрөнгийн өгөөжийг баталгаажуулдаг.",
+    "about.why.5.icon": "",
+    "about.why.5.title": "Урт Хугацааны Түншлэл",
+    "about.why.5.text":  "Бид харилцагчидтайгаа хамт өсч, тэдний AI аялалын эхнээс аж ахуйн нэгжийн хэмжээ хүртэл бүх үе шатанд дэмжлэг үзүүлдэг.",
+
+    /* ABOUT — TEAM */
+    "about.team.label":  "ГҮЙЦЭТГЭХ БАГ",
+    "about.team.title":  "Khuvsgul AI-н Цаана Байгаа Хүмүүс",
+    "about.team.read-more":  "Дэлгэрэнгүй →",
+    "about.team.read-less":  "Хураангуйлах ↑",
+
+    "team.batbaatar.name":   "Н.Батбаатар",
+    "team.batbaatar.title":  "Ерөнхий дарга, Хамтран Үүсгэн байгуулагч",
+    "team.batbaatar.short":  "25 гаруй жилийн туршид FMCG түгээлт, үл хөдлөх хөрөнгө, бизнесийн үйлчилгээний чиглэлээр бизнес байгуулж өссөн бизнес эрхлэгч, гүйцэтгэх тренер, бизнесийн удирдагч.",
+    "team.batbaatar.full":   "Nano Group-ийн ерөнхий дарга, хамтран үүсгэн байгуулагчаар Nano International-ийг 20 дахин өсгөх болон RE/MAX Mongolia-ийг Ази-Номхон Далайн бүсийн хамгийн том, амжилттай RE/MAX бүс нутгийн нэг болгоход (1800 гаруй агент) тэргүүлэн ажилласан. Австралийн Аделаидын Их Сургуульд Хэрэглээний Төслийн Удирдлагын магистрын зэрэг хамгаалсан.",
+
+    "team.bujinlkham.name":   "Б.Бүжинлхам",
+    "team.bujinlkham.title":  "Стратеги Хариуцсан Захирал, Хамтран Үүсгэн Байгуулагч",
+    "team.bujinlkham.short":  "FMCG түгээлт, жижиглэн худалдаа, үл хөдлөх хөрөнгө, эрчим хүчний салбарт бизнес байгуулж удирдсан 20 жилийн туршлагатай бизнес эрхлэгч, хөрөнгө оруулагч.",
+    "team.bujinlkham.full":   "Nano Group-ийн Гүйцэтгэх Захирал, Хамтран Үүсгэн Байгуулагч бөгөөд RE/MAX Mongolia-ийн Хамтрагч Бүсийн Эзэн. Forbes Mongolia-ийн шилдэг 50 эмэгтэй бизнес эрхлэгчдийн нэг. Австралийн Flinders Их Сургуульд Нанотехнологийн магистрын зэрэг хамгаалсан бөгөөд одоо Кэмбрижийн Их Сургуулийн Judge Business School-д Executive MBA хөтөлбөрт суралцаж байна.",
+
+    "team.aditi.name":   "Адити Госвами",
+    "team.aditi.title":  "AI Хариуцсан Захирал, Хамтран Үүсгэн Байгуулагч",
+    "team.aditi.short":  "15 гаруй жилийн технологийн туршлага, үүний 8 гаруй жилийг AI, машин сургалт, компьютер харааны чиглэлээр Boeing болон Microsoft-т ажилласан олон улсад хүлээн зөвшөөрөгдсөн AI мэргэжилтэн.",
+    "team.aditi.full":   "Boeing-д Машин Сургалтын Ахлах Удирдагч болон Өгөгдлийн Ерөнхий Шинжээч; Microsoft-т AI болон Azure Инженерийн албан тушаал хашиж байсан. Их Британийн Сэнт Эндрюсийн Их Сургуульд Хиймэл Оюуны магистрын зэргийг Онц Дүнтэй хамгаалсан бөгөөд одоо Кэмбрижийн Judge Business School-д Executive MBA хөтөлбөрт суралцаж байна.",
+
+    "team.ankesh.name":   "Анкеш Саха",
+    "team.ankesh.title":  "Технологи Хариуцсан Захирал, Хамтран Үүсгэн Байгуулагч",
+    "team.ankesh.short":  "Финтек, байгууллагын програм хангамж, уур амьсгалын технологийн салбарт 16 гаруй жилийн туршлагатай технологийн энтрепренер, AI стратегич. PwC-д Ахлах Зөвлөх байсан.",
+    "team.ankesh.full":   "Энэтхэгийн Үндэсний Технологийн Институтийг Электроникийн инженерийн чиглэлээр төгссөн бөгөөд Google-ийн Баталгаажсан Өгөгдлийн Шинжээч юм. Khuvsgul AI-д технологийн стратеги, платформын архитектур болон бүтээгдэхүүний инновацийг удирдан ажиллаж байна.",
+
+    "team.tseesuren.name":   "О.Цээсүрэн",
+    "team.tseesuren.title":  "Гүйцэтгэх Захирал",
+    "team.tseesuren.short":  "Банк санхүүгийн болон технологийн салбарт инноваци, бүтээгдэхүүн хөгжүүлэлтийг удирдсан 13 гаруй жилийн туршлагатай дижитал шилжилтийн мэргэжилтэн. Capitron Bank, LendMN-д ахлах удирдлагын туршлагатай.",
+    "team.tseesuren.full":   "Японы Сайтама Их Сургуульд Эдийн засгийн магистрын зэрэг, Монголын Үндэсний Их Сургуульд Бизнесийн Удирдлагын бакалаврын зэрэг хамгаалсан. Стратегийн алсын харааг үйл ажиллагааны шилдэг менежменттэй хослуулан байгууллагуудад AI-н бүрэн үнэ цэнийг нээхэд туслаж байна.",
+
+    /* ABOUT — APPROACH */
+    "about.approach.label":  "БИДНИЙ АРГАЧЛАЛ",
+    "about.approach.title":  "Бидний Арга Барил",
+    "about.approach.sub":    "Жижигхэн Эхэл. Ухаалгаар Томсго.",
+    "about.approach.intro":  "Ихэнх байгууллага хэдэн сая төгрөгийн AI шилжилтийн төслийг хэрэгтэй гэж боддоггүй. Тэд хариулт хэрэгтэй байдаг.",
+    "about.approach.step1.title": "Бизнесийн датаг холбох",
+    "about.approach.step2.title": "Гүйцэтгэх харагдах байдлыг бий болгох",
+    "about.approach.step3.title": "Боломж болон үр ашиггүй байдлыг тодорхойлох",
+    "about.approach.step4.title": "AI-д суурилсан таамаглал нэвтрүүлэх",
+    "about.approach.step5.title": "Шийдвэр болон процессыг автоматжуулах",
+    "about.approach.callout": "Энэ арга нь үнэ цэнийг хурдан хүргэхийн зэрэгцээ эрсдэлийг бууруулдаг.",
+
+    /* PRODUCTS */
+    "products.hero.label":   "ГҮЙЦЭТГЭХ УХААЛАГ ШИД",
+    "products.hero.headline":"Гүйцэтгэх Ухаалаг Дашбоард",
+    "products.hero.sub":     "Бизнесийн Удирдагчдад Зориулсан Үйл Ажиллагааны Систем",
+    "products.hero.body":    "Ихэнх гүйцэтгэх захирлууд тайлан цуглуулахад цагийг зарцуулдаг. Бид танд хариултыг шууд өгнө. Бизнесийнхээ бүх чухал үзүүлэлтийг нэг AI-д суурилсан дашбоардаар хянаарай.",
+    "products.features.title": "Гол Мэдээллүүд",
+    "products.f1":  "Орлогын динамик, хандлага",
+    "products.f2":  "Ашигт ажиллагааны шинжилгээ",
+    "products.f3":  "Бүтээгдэхүүний гүйцэтгэл",
+    "products.f4":  "Ашиг бууруулж буй хүчин зүйлс",
+    "products.f5":  "Хэрэглэгчийн зан төлөв",
+    "products.f6":  "Бараа материалын оновчлол",
+    "products.f7":  "Борлуулалтын багийн гүйцэтгэл",
+    "products.f8":  "Мөнгөн урсгалын хяналт",
+    "products.f9":  "Эрэлт, борлуулалтын таамаглал",
+    "products.f10": "AI зөвлөмжүүд",
+    "products.for.label":    "ХЭНД ЗОРИУЛАГДСАН БЭ",
+    "products.for.title":    "Бизнесийн Удирдагчдад Зориулсан",
+    "products.for.1": "Гүйцэтгэх захирал (CEO)",
+    "products.for.2": "Үүсгэн байгуулагчид",
+    "products.for.3": "Бизнес эрхлэгчид",
+    "products.for.4": "ТУЗ-ийн гишүүд",
+    "products.for.5": "Санхүүгийн захирлууд (CFO)",
+    "products.for.6": "Менежерүүд",
+    "products.cta.title": "Бизнесээ бүрэн өөр өнцгөөс харахад бэлэн үү?",
+    "products.cta.btn":   "ДЕМО ЗАХИАЛАХ",
+
+    /* SOLUTIONS */
+    "solutions.hero.label":   "AI ШИЙДЛҮҮД",
+    "solutions.hero.headline":"Бодит Үр Дүн Бий Болгодог AI Шийдлүүд",
+    "solutions.hero.body":    "Бид бизнесэд тань тохируулсан практик AI шийдлүүдийг бүтээдэг, ерөнхий хэрэгслүүд биш. Бүх шийдэл нь эхнээс нь хэмжигдэхүйц үнэ цэнэ бий болгохоор зориулагдсан.",
+    "solutions.cards.title":  "Бидний Санал Болгох Шийдлүүд",
+    "solutions.c1.title": "Бизнесийн Ухаалаг Шийдэл",
+    "solutions.c1.desc":  "Бизнесийн гүйцэтгэлийн бүх гол хэмжигдэхүүнийг бодит цаг хугацаанд харах боломж.",
+    "solutions.c2.title": "AI-д Суурилсан Таамаглал",
+    "solutions.c2.desc":  "Борлуулалт, эрэлт, бараа материал болон ирээдүйн ашигт ажиллагааг итгэлтэйгээр урьдчилан таамаглах.",
+    "solutions.c3.title": "Ашигт Ажиллагааны Анализ",
+    "solutions.c3.desc":  "Нуугдмал боломжуудыг илрүүлж бизнесийн ашгийн алдагдлыг арилгах.",
+    "solutions.c4.title": "Процессын Автоматжуулалт",
+    "solutions.c4.desc":  "Тайлан, ажлын урсгал, зөвшөөрлийн процесс болон давтагддаг ажлуудыг автоматжуулах.",
+    "solutions.c5.title": "AI Туслагчид",
+    "solutions.c5.desc":  "Танай байгууллагын өгөгдөл дээр сургагдсан ухаалаг AI туслагчдыг нэвтрүүлэх.",
+    "solutions.c6.title": "Шийдвэр Гаргалтын Ухаалаг Шийдэл",
+    "solutions.c6.desc":  "Илүү хурдан болон илүү зөв шийдвэр гаргахад зориулсан AI зөвлөмжүүдийг авах.",
+    "solutions.ai.label": "ЧАДАВХИ",
+    "solutions.ai.title": "AI Танай Бизнест Юу Хийж Чадах Вэ",
+    "solutions.ai.1.verb": "Урьдчилан Таамаглана",
+    "solutions.ai.1.desc": "Ирээдүйн борлуулалт, эрэлт, бараа материал болон мөнгөн урсгалыг таамаглана.",
+    "solutions.ai.2.verb": "Илрүүлнэ",
+    "solutions.ai.2.desc": "Эрсдэл, хэвийн бус үзэгдэл болон үр ашиггүй байдлыг асуудал болохоос нь өмнө олж харна.",
+    "solutions.ai.3.verb": "Зөвлөмж Өгнө",
+    "solutions.ai.3.desc": "Бизнесийн гүйцэтгэлд тулгуурлан дараагийн хамгийн зөв алхмуудыг санал болгоно.",
+    "solutions.ai.4.verb": "Автоматжуулна",
+    "solutions.ai.4.desc": "Гараар хийх ажил болон давтагддаг тайлангийн ажлыг бууруулна.",
+    "solutions.ai.5.verb": "Оновчлоно",
+    "solutions.ai.5.desc": "Үнэ тогтоолт, бараа материал, хүний нөөц болон нөөцийн хуваарилалтыг сайжруулна.",
+    "solutions.ai.6.verb": "Суралцана",
+    "solutions.ai.6.desc": "Өгөгдөлд суурилсан ойлголтуудаар дамжуулан шийдвэрийн чанарыг тасралтгүй сайжруулна.",
+    "solutions.serve.label": "САЛБАРУУД",
+    "solutions.serve.title": "Бид Хэнд Үйлчилдэг Вэ",
+    "solutions.serve.1":  "Түгээлт ба FMCG",
+    "solutions.serve.2":  "Жижиглэн худалдаа",
+    "solutions.serve.3":  "Үйлдвэрлэл",
+    "solutions.serve.4":  "Санхүүгийн үйлчилгээ",
+    "solutions.serve.5":  "Үл хөдлөх хөрөнгө",
+    "solutions.serve.6":  "Уул уурхай",
+    "solutions.serve.7":  "Ложистик",
+    "solutions.serve.8":  "Мэргэжлийн үйлчилгээ",
+    "solutions.serve.9":  "Спортын байгууллагууд",
+    "solutions.cta.btn":  "ДЕМО ЗАХИАЛАХ",
+
+    /* FAQ */
+    "faq.hero.headline": "Түгээмэл Асуултууд",
+    "faq.hero.sub":      "Бизнест хиймэл оюун ухааны талаар асуулт байна уу? Бид хариулт өгнө.",
+    "faq.label":         "АСУУЛЬТУУД",
+    "faq.title":         "Нийтлэг Асуултууд",
+    "faq.q1":   "Манай байгууллага IT баггүй. AI нэвтрүүлж чадах уу?",
+    "faq.a1.lead": "Тийм мэдээж.",
+    "faq.a1.body": "Манай олон харилцагчид дотоод IT баггүй байдаг. Бид хэрэгжилтийн бүх процессыг удирдаж, цаашдын дэмжлэгийг үзүүлэх болно. Таны баг эхний өдрөөс итгэлтэйгээр шийдлийг ашиглаж чадна.",
+    "faq.q2":   "AI зөвхөн том компаниудад зориулсан уу?",
+    "faq.a2.lead": "Үгүй.",
+    "faq.a2.body": "Манай шийдлүүд ЖДҮ болон томоохон байгууллагуудад аль алинд нь боломжийн өртөгтэй, практик байдлаар зориулагдсан. Хиймэл оюун ухааны шийдлийг олон зуун сая төгрөг биш боломжийн үнээр нэвтрүүлэх боломжтой.",
+    "faq.q3":   "Манай дата цэвэр биш бол яах вэ?",
+    "faq.a3.lead": "Заавал биш.",
+    "faq.a3.body": "Ихэнх байгууллагын дата төгс байдаггүй. Бид өгөгдлийг цэгцэлж, утга учиртай шинжилгээ хийхэд бэлэн болгоход тусалдаг. Бүх өгөгдлийг биш, шийдвэр гаргалтанд хэрэгтэй гол датануудыг цэгцэлж хэрэгжүүлнэ.",
+    "faq.q4":   "Хэрэгжүүлэхэд хэр хугацаа шаардлагатай вэ?",
+    "faq.a4.lead": "2–3 сар.",
+    "faq.a4.body": "Ихэнх дашбоардын шийдлийг 2-3 сарын дотор нэвтрүүлэх боломжтой. Нарийн төвөгтэй хэрэгжилт нь илүү урт хугацаа авч болох ч бид үргэлж аль болох хурдан үнэ цэнэ хүргэхийг зорьдог.",
+    "faq.q5":   "Манай одоогийн системүүдтэй холбогдож чадах уу?",
+    "faq.a5.lead": "Тийм.",
+    "faq.a5.body": "Бид ERP, санхүүгийн систем, CRM, POS, Excel болон тусгайлан хөгжүүлсэн системүүдтэй холбогдон ажиллах боломжтой. Манай баг техникийн интеграцийг хариуцдаг.",
+    "faq.cta.title": "Асуулт байна уу?",
+    "faq.cta.body":  "Манай баг бизнест тань AI-н талаар аливаа асуултад хариулахдаа баяртай байна.",
+    "faq.cta.btn":   "ХОЛБОГДОХ",
+
+    /* CONTACT */
+    "contact.hero.headline": "Боломжийг Хамтдаа Судалцгаая",
+    "contact.hero.body":     "Ирээдүй бол илүү хурдан бөгөөд илүү зөв шийдвэр гаргадаг байгууллагуудынх. Та AI аяллаа эхлүүлж байгаа эсвэл одоо байгаа санаануудаа дараагийн түвшинд гаргахыг хүсэж байгаа эсэхээс үл хамааран бид танай бизнесийн талаар илүү ихийг сонсохдоо баяртай байх болно.",
+    "contact.form.title":    "Бидэнд Мэдэгдэх",
+    "contact.form.sub":      "Бид 24 цагийн дотор хариу өгнө.",
+    "contact.form.name":     "Бүтэн нэр",
+    "contact.form.company":  "Компанийн нэр",
+    "contact.form.email":    "Имэйл хаяг",
+    "contact.form.phone":    "Утасны дугаар",
+    "contact.form.message":  "Мэдэгдэл",
+    "contact.form.ph.name":  "Таны бүтэн нэр",
+    "contact.form.ph.company": "Таны компанийн нэр",
+    "contact.form.ph.email": "та@компани.mn",
+    "contact.form.ph.phone": "+976 ...",
+    "contact.form.ph.message":"Бизнесийнхаа талаар болон AI-р юуг хийж гүйцэтгэхийг хүсэж байгаагаа бидэнд хэлнэ үү...",
+    "contact.form.submit":   "МЭДЭГДЭЛ ИЛГЭЭХ",
+    "contact.success.title": "Мэдэгдэл Илгээгдлээ!",
+    "contact.success.body":  "Холбоо барьсанд баярлалаа. Бид 24 цагийн дотор хариу өгнө.",
+    "contact.consult.title": "Үнэгүй 15 Минутын AI Зөвлөгөө",
+    "contact.consult.text":  "Бизнесийнхээ сорилтуудыг ярилцаж, AI танай байгууллагад хамгийн их үнэ цэнэ бий болгож болохыг хамтдаа тодорхойлцгооё.",
+    "contact.details.email": "info@khuvsgul.ai",
+    "contact.details.web":   "www.khuvsgul.ai",
+    "contact.details.city":  "Улаанбаатар, Монгол Улс",
+    "contact.details.address":"Хан-Уул дүүрэг, 15-р хороо, Махатма Гандигийн гудамж, NM Tower, 13 давхар, Улаанбаатар",
+
+    /* SHARED */
+    "cta.book-demo":    "ДЕМО ЗАХИАЛАХ",
+    "cta.contact-us":  "ХОЛБОГДОХ",
+    "cta.learn-more":  "ДЭЛГЭРЭНГҮЙ",
+  }
+};
+
+/* ── Language Engine ─────────────────────────────────────── */
+(function LangEngine() {
+  const STORAGE_KEY = 'khuvsgulai_lang';
+  let currentLang = localStorage.getItem(STORAGE_KEY) || 'en';
+
+  function applyLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    localStorage.setItem(STORAGE_KEY, lang);
+
+    // Update all i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = TRANSLATIONS[lang]?.[key];
+      if (val !== undefined) {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.placeholder = val;
+        } else if (el.hasAttribute('data-i18n-attr')) {
+          el.setAttribute(el.getAttribute('data-i18n-attr'), val);
+        } else {
+          el.textContent = val;
+        }
+      }
+    });
+
+    // Update lang toggle buttons
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+  }
+
+  function toggleLang() {
+    applyLang(currentLang === 'en' ? 'mn' : 'en');
+  }
+
+  // Wire up all lang buttons
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+    });
+    // Apply on load
+    applyLang(currentLang);
+  });
+
+  // Expose for external calls
+  window.KhuvsgulLang = { apply: applyLang, toggle: toggleLang, current: () => currentLang };
+})();
