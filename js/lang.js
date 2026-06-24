@@ -334,6 +334,7 @@ const TRANSLATIONS = {
     "blog.featured.body.list2": "Proprietary Knowledge Retrieval: Enabling sales and support teams to instantly query thousands of internal documents, product spec sheets, and price books in seconds.",
     "blog.featured.body.list3": "Localized Customer Support: Bridging the language gap for Mongolian and Central Asian dialects with nuanced, context-aware chatbot support.",
     "blog.featured.body.conclusion": "Implementing AI does not require rewriting your entire infrastructure from scratch. By starting with a single high-impact use case—such as internal document search or automated customer intake—companies can demonstrate clear ROI within months, building a foundation for broader digital transformation.",
+    "blog.view-all": "View All Articles",
 
     /* SHARED */
     "cta.book-demo":    "BOOK A DEMO",
@@ -671,6 +672,7 @@ const TRANSLATIONS = {
     "blog.featured.body.list2": "Дотоод Мэдлэгийн Санг Ашиглах: Борлуулалт болон хэрэглэгчийн үйлчилгээний багууд компанийн олон мянган дотоод баримт бичиг, бүтээгдэхүүний тодорхойлолт, үнийн хүснэгт зэргээс хэдхэн секундэд хэрэгцээт мэдээллээ хайж олох.",
     "blog.featured.body.list3": "Орон Нутгийн Хэрэглэгчийн Дэмжлэг: Монгол болон Төв Азийн хэл, аялгууны онцлогийг тусгасан, контекстийг мэдэрдэг чатботыг ашиглан хэлний бэрхшээлийг арилгах.",
     "blog.featured.body.conclusion": "Хиймэл оюун ухааныг нэвтрүүлэхэд танай компанийн мэдээллийн технологийн дэд бүтцийг эхнээс нь бүхэлд нь өөрчлөх шаардлагагүй. Дотоод баримт бичигт хайлт хийх эсвэл хэрэглэгчийн мэдээллийг автоматаар хүлээн авах зэрэг өндөр үр дүнтэй нэг тодорхой тохиолдлоос эхэлснээр хэдхэн сарын дотор хөрөнгө оруулалтын өгөөжөө харах боломжтой бөгөөд энэ нь цаашдын дижитал шилжилтийн бат бөх суурь болох юм.",
+    "blog.view-all": "Бүх Нийтлэлийг Харах",
 
     /* SHARED */
     "cta.book-demo":    "ДЕМО ЗАХИАЛАХ",

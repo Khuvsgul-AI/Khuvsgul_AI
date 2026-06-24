@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/pages/products.css" />
   <link rel="stylesheet" href="css/pages/faq.css" />
   <link rel="stylesheet" href="css/pages/contact.css" />
+  <link rel="stylesheet" href="css/pages/blog.css" />
   <style>
     /* ── Single-page scroll tweaks ─────────────────────────── */
     html { scroll-behavior: smooth; }
@@ -77,7 +78,7 @@
       <li><a href="#about"     class="nav__link"            data-section="about"     data-i18n="nav.about">ABOUT US</a></li>
       <li><a href="#products"  class="nav__link"            data-section="products"  data-i18n="nav.products">PRODUCTS</a></li>
       <li><a href="#solutions" class="nav__link"            data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a></li>
-      <li><a href="blog/index.html" class="nav__link"            data-section="blog"      data-i18n="nav.blog">BLOG</a></li>
+      <li><a href="#blog"      class="nav__link"            data-section="blog"      data-i18n="nav.blog">BLOG</a></li>
       <li><a href="#faq"       class="nav__link"            data-section="faq"       data-i18n="nav.faq">FAQ</a></li>
       <li><a href="#contact"   class="nav__link"            data-section="contact"   data-i18n="nav.contact">CONTACT US</a></li>
     </ul>
@@ -103,7 +104,7 @@
     <a href="#about"     class="nav__drawer-link" data-section="about"     data-i18n="nav.about">ABOUT US</a>
     <a href="#products"  class="nav__drawer-link" data-section="products"  data-i18n="nav.products">PRODUCTS</a>
     <a href="#solutions" class="nav__drawer-link" data-section="solutions" data-i18n="nav.solutions">SOLUTIONS</a>
-    <a href="blog/index.html" class="nav__drawer-link" data-section="blog" data-i18n="nav.blog">BLOG</a>
+    <a href="#blog"      class="nav__drawer-link" data-section="blog" data-i18n="nav.blog">BLOG</a>
     <a href="#faq"       class="nav__drawer-link" data-section="faq"       data-i18n="nav.faq">FAQ</a>
     <a href="#contact"   class="nav__drawer-link" data-section="contact"   data-i18n="nav.contact">CONTACT US</a>
   </nav>
@@ -521,6 +522,90 @@
 </section>
 
 <!-- ─────────────────────────────────────────────────────────
+     §7.5  BLOG PREVIEW
+───────────────────────────────────────────────────────────── -->
+<section class="section bg-dark-2" id="blog" aria-labelledby="blog-section-heading" style="border-top: 1px solid rgba(255, 255, 255, 0.03);">
+  <div class="container">
+    <div class="section-header--center reveal">
+      <span class="section-label" data-i18n="blog.label">OUR BLOG</span>
+      <h2 class="heading-1" id="blog-section-heading" data-i18n="blog.title" style="color:var(--white);">Company Insights & News</h2>
+    </div>
+    
+    <div class="recent-grid" style="margin-top: var(--space-8);">
+      <!-- Post 1 -->
+      <article class="blog-card reveal delay-1">
+        <div class="blog-card__image">
+          <div class="blog-card__image-placeholder"></div>
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" style="stroke: var(--cyan-300);"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">
+            <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post1.cat">DATA STRATEGY</span>
+            <span class="dot">•</span>
+            <span data-i18n="blog.post1.date">June 18, 2026</span>
+          </div>
+          <h3 class="blog-card__title"><a href="blog/post/index.html" data-i18n="blog.post1.title">The Importance of Clean Business Data for AI Forecasting</a></h3>
+          <p class="blog-card__desc" data-i18n="blog.post1.desc">Before implementing predictive models, businesses must structure their internal database schemas. Here is a practical roadmap to data preparation.</p>
+          <a href="blog/post/index.html" class="blog-card__link">
+            <span data-i18n="blog.read-more">Read Article</span>
+            <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card reveal delay-2">
+        <div class="blog-card__image">
+          <div class="blog-card__image-placeholder"></div>
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" style="stroke: var(--cyan-300);"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="6"/></svg>
+        </div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">
+            <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post2.cat">SECURITY</span>
+            <span class="dot">•</span>
+            <span data-i18n="blog.post2.date">June 12, 2026</span>
+          </div>
+          <h3 class="blog-card__title"><a href="blog/post/index.html" data-i18n="blog.post2.title">Deploying Local AI Assistants: Security & Governance</a></h3>
+          <p class="blog-card__desc" data-i18n="blog.post2.desc">How to train domain-specific models on proprietary company knowledge bases without leaking confidential intelligence to public APIs.</p>
+          <a href="blog/post/index.html" class="blog-card__link">
+            <span data-i18n="blog.read-more">Read Article</span>
+            <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card reveal delay-3">
+        <div class="blog-card__image">
+          <div class="blog-card__image-placeholder"></div>
+          <svg class="svg-icon" viewBox="0 0 24 24" fill="none" style="stroke: var(--cyan-300);"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div class="blog-card__content">
+          <div class="blog-card__meta">
+            <span class="blog-badge" style="margin-bottom:0;" data-i18n="blog.post3.cat">DECISION INTELLIGENCE</span>
+            <span class="dot">•</span>
+            <span data-i18n="blog.post3.date">May 28, 2026</span>
+          </div>
+          <h3 class="blog-card__title"><a href="blog/post/index.html" data-i18n="blog.post3.title">ROI in AI: Measuring the Impact of Process Automation</a></h3>
+          <p class="blog-card__desc" data-i18n="blog.post3.desc">A mathematical guide for CFOs and CEOs to calculate financial payback timelines and operational savings from automation workflows.</p>
+          <a href="blog/post/index.html" class="blog-card__link">
+            <span data-i18n="blog.read-more">Read Article</span>
+            <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="text-center" style="margin-top: var(--space-10);">
+      <a href="blog/index.html" class="btn btn--primary">
+        <span data-i18n="blog.view-all">View All Articles</span>
+        <svg class="svg-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" style="stroke: currentColor; stroke-width: 2;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────────────────────────
      §8  FAQ
 ───────────────────────────────────────────────────────────── -->
 <section class="faq-hero" id="faq" aria-label="FAQ hero">
@@ -713,6 +798,7 @@
           <li><a href="#about"     style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.about">ABOUT US</a></li>
           <li><a href="#products"  style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.products">PRODUCTS</a></li>
           <li><a href="#solutions" style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.solutions">SOLUTIONS</a></li>
+          <li><a href="#blog"      style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.blog">BLOG</a></li>
           <li><a href="#faq"       style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.faq">FAQ</a></li>
           <li><a href="#contact"   style="font-size:0.88rem;color:rgba(255,255,255,0.6);transition:color 0.2s;" data-i18n="nav.contact">CONTACT US</a></li>
         </ul>
@@ -750,13 +836,14 @@
 <script>
 /* ── Scroll-spy: highlight the active nav link as user scrolls ── */
 (function scrollSpy() {
-  const sections  = ['home','problems','about','products','solutions','faq','contact'];
+  const sections  = ['home','problems','about','products','solutions','blog','faq','contact'];
   // Map sections to nav links (problems section → "home" is still selected, about → about, etc.)
   const sectionToNav = {
     home: 'home', problems: 'home',
     about: 'about', origin: 'about',
     products: 'products',
     solutions: 'solutions',
+    blog: 'blog',
     faq: 'faq',
     contact: 'contact'
   };
