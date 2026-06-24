@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
           getComputedStyle(document.documentElement).getPropertyValue('--nav-height')
         ) || 72;
         const top = target.getBoundingClientRect().top + window.scrollY - navHeight - 8;
-        window.scrollTo({ top, behavior: 'smooth' });
+        window.scrollTo({ top });
       }
     });
   });

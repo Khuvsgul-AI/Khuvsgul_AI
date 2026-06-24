@@ -98,6 +98,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+section[id] {
+  scroll-margin-top: calc(var(--nav-height) + 12px);
+}
+
 body {
   font-family: var(--font-base);
   font-weight: var(--fw-regular);
