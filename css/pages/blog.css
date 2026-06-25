@@ -7,6 +7,7 @@
 .blog-hero {
   background: var(--navy-900);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: calc(var(--nav-height) + var(--space-8));
 }
 
 .blog-badge {
@@ -21,6 +22,17 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: var(--space-4);
+}
+
+.dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: var(--cyan-300);
+  border-radius: var(--radius-full);
+  opacity: 0.6;
+  margin: 0 var(--space-2);
+  flex-shrink: 0;
 }
 
 /* ── Blog Index layout ──────────────────────────────────── */

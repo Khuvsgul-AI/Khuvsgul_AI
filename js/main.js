@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', updateNav, { passive: true });
-  // Always start scrolled (opaque) — looks better
-  nav?.classList.add('scrolled');
+  // Set initial state on load
+  updateNav();
 
 
   /* ── Mobile Hamburger ───────────────────────────────────── */

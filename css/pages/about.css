@@ -293,6 +293,10 @@
   transition: border-color var(--transition-base);
 }
 
+.team-card__photo--tseesuren {
+  object-position: top;
+}
+
 .team-card:hover .team-card__photo {
   border-color: var(--cyan-400);
 }
