@@ -78,30 +78,48 @@
 
 .origin-inner {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: var(--space-16);
-  align-items: start;
+  grid-template-columns: 0.9fr 2fr;
+  gap: var(--space-12);
+  align-items: flex-start;
 }
 
-.origin-badge {
-  position: sticky;
-  top: calc(var(--nav-height) + var(--space-8));
+.origin-media {
+  width: 100%;
+}
+
+.origin-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  transition: transform var(--transition-base);
+}
+
+.origin-image:hover {
+  transform: scale(1.02);
+}
+
+.origin-badges-horizontal {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
+  flex-wrap: nowrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+  width: 100%;
 }
 
 .origin-badge__item {
   display: flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
   background: var(--offwhite);
   border-radius: var(--radius-md);
   border: 1px solid var(--gray-100);
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: var(--fw-medium);
   color: var(--text-dark);
+  white-space: nowrap;
 }
 
 .origin-badge__item .icon {
@@ -494,11 +512,15 @@
 @media (max-width: 1024px) {
   .origin-inner {
     grid-template-columns: 1fr;
+    gap: var(--space-8);
   }
-  .origin-badge {
-    position: static;
-    flex-direction: row;
+  .origin-badges-horizontal {
+    display: flex;
     flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .origin-badges-horizontal .origin-badge__item {
+    flex: 1 1 45%;
   }
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -506,6 +528,13 @@
 }
 
 @media (max-width: 768px) {
+  .origin-badges-horizontal {
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .origin-badges-horizontal .origin-badge__item {
+    width: 100%;
+  }
   .mission-cards {
     grid-template-columns: 1fr;
   }
