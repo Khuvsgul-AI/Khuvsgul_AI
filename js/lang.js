@@ -96,8 +96,13 @@ const TRANSLATIONS = {
     "about.origin.badge1": "Cambridge Judge Business School",
     "about.origin.badge2": "Mongolia & Central Asia",
     "about.origin.badge3": "Joint Venture",
+    "about.origin.journey.cambridge": "Cambridge",
+    "about.origin.journey.centralasia": "Central Asia",
     "about.origin.p1": "The idea began at the University of Cambridge Judge Business School, where two classmates — an AI scientist and a business leader — discovered a shared vision. One brought deep expertise in artificial intelligence, machine learning, and enterprise technology. The other brought years of experience scaling businesses and understanding the challenges business owners face every day.",
     "about.origin.p2": "Together, supported by the Cambridge ecosystem and global networks, they founded Khuvsgul AI. Today, Khuvsgul AI combines world-class AI capabilities with practical business leadership to help organisations across Mongolia and Central Asia unlock the true value of their data.",
+
+    /* ABOUT — WHY NAMED */
+    "about.named.title": "Why We Named Khuvsgul AI",
 
     /* ABOUT — MISSION */
     "about.mission.label":        "PURPOSE",
@@ -203,6 +208,7 @@ const TRANSLATIONS = {
     "solutions.hero.headline":"AI Solutions That Deliver Real Business Results",
     "solutions.hero.body":    "We build practical AI solutions tailored to your business, not generic tools. Every solution is designed to deliver measurable value from day one.",
     "solutions.cards.title":  "What We Offer",
+    "solutions.cards.desc":   "We build practical, custom-tailored AI solutions that address your critical operational needs, automate key workflows, and unlock massive hidden efficiencies.",
     "solutions.c1.title": "Executive Business Intelligence",
     "solutions.c1.desc":  "Real-time visibility into business performance across all key dimensions.",
     "solutions.c2.title": "AI Forecasting",
@@ -217,6 +223,7 @@ const TRANSLATIONS = {
     "solutions.c6.desc":  "Receive AI-powered recommendations for faster and better decisions.",
     "solutions.ai.label": "CAPABILITIES",
     "solutions.ai.title": "What AI Can Do For Your Business",
+    "solutions.ai.desc":  "Unlock new levels of growth and operational efficiency with our cutting-edge AI integration capabilities.",
     "solutions.ai.1.verb": "Predict",
     "solutions.ai.1.desc": "Forecast future sales, demand, inventory, and cash flow.",
     "solutions.ai.2.verb": "Detect",
@@ -366,7 +373,7 @@ const TRANSLATIONS = {
     "home.hero.headline1":  "Удирдагчдад Илүү Сайн",
     "home.hero.headline2":  "Шийдвэр Гаргахад Туслах AI",
     "home.hero.sub":        "Ихэнх бизнесүүдэд илүү их датагаас илүү илүү сайн шийдвэр гаргах боломж хэрэгтэй.",
-    "home.hero.body":       "Хөвсгөл AI нь бизнес эрхлэгчид, гүйцэтгэх удирдлагууд болон удирдлагын багуудад бизнесийн төвөгтэй өгөгдлийг AI-д суурилсан дашбоард шийдвэр гаргахад зориулсан өгөгдлийн самбар, өнгөрсөн хугацааны мэдээлэлд үндэсэн ирээдүйг таамаглах боломж болон ухаалаг автоматжуулалтаар дамжуулан ойлгомжтой, хэрэгжүүлэх боломжтой мэдээлэл болгон хувиргахад тусалдаг.",
+    "home.hero.body":       "Хөвсгөл AI нь бизнес эрхлэгчид, гүйцэтгэх удирдлагууд болон удирдлагын багуудад бизнесийн төвөгтэй өгөгдлийг AI-д суурилсан дашбоард шийдвэр гаргахад зориулсан өгөгдлийн самбар, өнгөрсөн хугацааны мэдээлэлд үндэслэн ирээдүйг таамаглах боломж болон ухаалаг автоматжуулалтаар дамжуулан ойлгомжтой, хэрэгжүүлэх боломжтой мэдээлэл болгон хувиргахад тусалдаг.",
     "home.hero.cta1":       "ДЕМО ЦАГ АВАХ",
     "home.hero.cta2":       "ДЭЛГЭРЭНГҮЙ",
     "home.hero.scroll":     "Доош гүйлгэх",
@@ -436,8 +443,13 @@ const TRANSLATIONS = {
     "about.origin.badge1": "Кэмбрижийн Judge Бизнес Сургууль",
     "about.origin.badge2": "Монгол болон Төв Ази",
     "about.origin.badge3": "Хамтарсан Хэрэгжилт",
+    "about.origin.journey.cambridge": "Кэмбриж",
+    "about.origin.journey.centralasia": "Төв Ази",
     "about.origin.p1": "Хөвсгөл AI нь Англи дахь, Кэмбриджийн Их Сургуулийн бизнесийн сургуулийн нэгэн танхимд хоёр найзын гайхалтай санаа, энгийн итгэл үнэмшлээс төрсөн start up компани юм. Нэг нь хиймэл оюун ухаан, машин сургалт болон enterprise технологийн гүнзгий мэдлэгтэй. Нөгөө нь бизнесийг өсгөж хөгжүүлсэн олон жилийн туршлага, байгууллага удирдсан туршлага, бизнес эрхлэгчдийн өдөр тутмын сорилтыг ойлгодог удирдагч байсан.",
     "about.origin.p2": "Тэд Кембрижийн экосистем, олон улсын экспертүүд болон дэлхийн сүлжээний дэмжлэг, туслалцаатайгаар Хөвсгөл AI-г үүсгэн байгуулсан юм. Өнөөдөр Хөвсгөл AI нь дэлхийн түвшний AI чадамжийг бизнесийн практик туршлагатай хослуулан Монгол болон Төв Азийн байгууллагуудад дата мэдээлэлд суурилан хиймэл оюун ухааны жинхэнэ үнэ цэнийг нээхэд тусалж байна.",
+
+    /* ABOUT — WHY NAMED */
+    "about.named.title": "Яагаад Хөвсгөл AI гэж нэрлэсэн бэ?",
 
     /* ABOUT — MISSION */
     "about.mission.label":        "ЗОРИЛГО",
@@ -536,15 +548,16 @@ const TRANSLATIONS = {
     /* SOLUTIONS */
     "solutions.hero.label":   "AI ШИЙДЛҮҮД",
     "solutions.hero.headline":"Бодит Үр Дүн Бий Болгодог AI Шийдлүүд",
-    "solutions.hero.body":    "Бид бизнесэд тань тохируулсан практик AI шийдлүүдийг бүтээдэг, ерөнхий хэрэгслүүд биш. Бүх шийдэл нь эхнээс нь хэмжигдэхүйц үнэ цэнэ бий болгохоор зориулагдсан.",
+    "solutions.hero.body":    "Бид бизнест тань тохируулсан практик AI шийдлүүдийг бүтээдэг, ерөнхий хэрэгслүүд биш. Бүх шийдэл нь эхнээс нь хэмжигдэхүйц үнэ цэнэ бий болгохоор зориулагдсан.",
     "solutions.cards.title":  "Бидний Санал Болгох Шийдлүүд",
+    "solutions.cards.desc":   "Бид таны үйл ажиллагааны чухал хэрэгцээг хангах, гол ажлын урсгалыг автоматжуулах, нуугдмал үр ашгийг нээх практик, тусгайлан боловсруулсан AI шийдлүүдийг бүтээдэг.",
     "solutions.c1.title": "Бизнесийн ухаалаг шийдэл",
     "solutions.c1.desc":  "Бизнесийн гүйцэтгэлийг бодит цаг хугацаанд харах боломж.",
     "solutions.c2.title": "AI д суурилсан ирээдүйн таамаглал",
     "solutions.c2.desc":  "Борлуулалт, эрэлт, бараа материал болон ирээдүйн ашигт ажиллагааг урьдчилан таамаглах.",
     "solutions.c3.title": "Ашигт ажиллагааны анализ",
     "solutions.c3.desc":  "Нуугдмал боломжууд болон ашгийн алдагдлыг илрүүлэх.",
-    "solutions.c4.title": "Процесиийн автоматжуулалт",
+    "solutions.c4.title": "Процессийн автоматжуулалт",
     "solutions.c4.desc":  "Ихэнхи компаниуд, байгууллагууд өдөр тутмын процесстоо дарагдсаар байдаг. Бид Тайлан, ажлын урсгал, зөвшөөрлийн процесс болон давтагддаг ажлуудыг автоматжуулахад туслана.",
     "solutions.c5.title": "AI Туслахууд",
     "solutions.c5.desc":  "Танай байгууллагын өгөгдөл дээр сургагдсан ухаалаг AI туслахуудыг нэвтрүүлэх. Ингэснээр таны үнэ цэнэтэй цагийг хамгийн их үрдэг боловч үнэ цэнэ багатай процесууддыг агентад даатгах боломжыг нэмэгдүүлнэ.",
@@ -552,6 +565,7 @@ const TRANSLATIONS = {
     "solutions.c6.desc":  "Илүү хурдан, илүү зөв шийдвэр гаргахад зориулсан AI зөвлөмжүүд.",
     "solutions.ai.label": "ЧАДАВХИ",
     "solutions.ai.title": "AI ТАНАЙ БИЗНЕСТ ЮУ ХИЙЖ ЧАДАХ ВЭ?",
+    "solutions.ai.desc":  "Манай хамгийн сүүлийн үеийн AI интеграцчлалын чадавхиар дамжуулан өсөлт болон үйл ажиллагааны үр ашгийн шинэ түвшнийг нээгээрэй.",
     "solutions.ai.1.verb": "Урьдчилан Таамаглана",
     "solutions.ai.1.desc": "Ирээдүйн борлуулалт, эрэлт, бараа материал, ажилтнуудын бүтээмж болон мөнгөн урсгалыг таамаглана.",
     "solutions.ai.2.verb": "Илрүүлнэ",

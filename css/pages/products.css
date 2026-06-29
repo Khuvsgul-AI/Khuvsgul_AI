@@ -6,9 +6,10 @@
 /* ── Page Hero (reused for products + solutions) ──────────── */
 .page-hero {
   background: var(--navy-900);
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
+  min-height: auto;
+  display: block;
+  padding-top: calc(var(--nav-height) + var(--space-8));
+  padding-bottom: var(--space-12);
   position: relative;
   overflow: hidden;
 }
@@ -370,5 +371,97 @@
   }
   .features-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ── Solutions Revisions (June 2026) ───────────────────────── */
+
+.page-hero__layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.page-hero__image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.solutions-header-block {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-12);
+  align-items: center;
+  margin-bottom: var(--space-12);
+}
+
+.solutions-header-image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  max-height: 280px;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.solutions-header-image:hover {
+  transform: scale(1.01);
+}
+
+.solutions-header-desc {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin-top: var(--space-4);
+}
+
+.what-ai-header-block {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-12);
+  align-items: center;
+  margin-bottom: var(--space-12);
+}
+
+.what-ai-header-image {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  max-height: 280px;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.what-ai-header-image:hover {
+  transform: scale(1.01);
+}
+
+.what-ai-header-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 1024px) {
+  .page-hero__layout,
+  .solutions-header-block,
+  .what-ai-header-block {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+  .page-hero__media,
+  .solutions-header-media,
+  .what-ai-header-media {
+    order: -1;
+  }
+  .page-hero__image,
+  .solutions-header-image,
+  .what-ai-header-image {
+    max-height: 320px;
   }
 }

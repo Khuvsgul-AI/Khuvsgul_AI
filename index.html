@@ -151,7 +151,7 @@
       <canvas id="particle-canvas" aria-hidden="true"></canvas>
       <div class="hero__bg" aria-hidden="true">
         <video autoplay loop muted playsinline class="hero__video-bg">
-          <source src="assets/videos/hero-bg-video.mp4" type="video/mp4" />
+          <source src="assets/videos/khuvsgul-lake-bg.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="hero__overlay" aria-hidden="true"></div>
@@ -384,9 +384,40 @@
 
     <section class="section origin-section" aria-labelledby="origin-heading">
       <div class="container">
+        <!-- Prominent Full-Width Journey Visual (100% width) -->
+        <div class="origin-journey-banner reveal">
+          <div class="journey-visual">
+            <div class="journey-node">
+              <img src="assets/images/about/cambridge.jpg" alt="Cambridge" class="journey-img" />
+              <span class="journey-label" data-i18n="about.origin.journey.cambridge">Cambridge</span>
+            </div>
+            <div class="journey-connector">
+              <!-- Curved dashed arrow representing the journey -->
+              <svg viewBox="0 0 100 40" class="journey-arrow-svg">
+                <defs>
+                  <marker id="arrowhead" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                    <path d="M0,0 L6,3 L0,6 Z" fill="var(--blue-500)" />
+                  </marker>
+                </defs>
+                <path d="M10,10 Q50,38 90,10" fill="none" stroke="var(--blue-500)" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead)" />
+              </svg>
+            </div>
+            <div class="journey-node">
+              <img src="assets/images/about/central-asia.jpg" alt="Central Asia" class="journey-img" />
+              <span class="journey-label" data-i18n="about.origin.journey.centralasia">Central Asia</span>
+            </div>
+          </div>
+        </div>
+
         <div class="origin-inner">
           <div class="origin-media reveal-left">
-            <img src="assets/images/about-began.jpeg" alt="How It All Began" class="origin-image" />
+            <!-- Autoplay & Looping Video Player (Original Quality) -->
+            <div class="origin-video-container">
+              <video class="origin-video" autoplay loop muted playsinline>
+                <source src="assets/videos/cambridge-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
           <div class="reveal-right">
             <div class="origin-badges-horizontal">
@@ -427,14 +458,33 @@
       </div>
     </section>
 
+    <!-- Why We Named Khuvsgul AI -->
+    <section class="section why-named-section" id="why-named" aria-labelledby="why-named-heading">
+      <div class="container">
+        <div class="why-named-inner">
+          <div class="section-header--center reveal">
+            <span class="section-label" style="justify-content: center;" data-i18n="about.named.label">OUR NAME</span>
+            <h2 class="heading-1" id="why-named-heading" data-i18n="about.named.title" style="color: var(--navy-900);">Why We Named Khuvsgul AI</h2>
+          </div>
+          <div class="why-named-media reveal" style="margin-top: var(--space-8);">
+            <img src="assets/images/about/khuvsgul-lake.jpg" alt="Lake Khuvsgul, Mongolia" class="why-named-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Mission & Vision -->
     <section class="section mission-section" aria-labelledby="mission-heading">
       <div class="container">
-        <div class="section-header--center reveal" style="color:var(--text-light);">
-          <span class="section-label" data-i18n="about.mission.label">PURPOSE</span>
+        <!-- Section Header Centered at Top -->
+        <div class="section-header--center reveal" style="color:var(--text-light); text-align: center; margin-bottom: var(--space-12);">
+          <span class="section-label" style="justify-content: center;" data-i18n="about.mission.label">PURPOSE</span>
           <h2 class="heading-1" id="mission-heading" data-i18n="about.mission.title">Mission & Vision</h2>
         </div>
-        <div class="mission-cards">
+        
+        <!-- 3-Column Symmetric Grid -->
+        <div class="mission-grid-layout">
+          <!-- Card 1: Our Mission -->
           <div class="mission-card reveal-left">
             <div class="mission-card__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24"
                 aria-hidden="true">
@@ -443,12 +493,18 @@
                 <circle cx="12" cy="12" r="2" />
               </svg></div>
             <div class="mission-card__label" data-i18n="about.mission.card1.label">OUR MISSION</div>
-            <h3 class="mission-card__title" data-i18n="about.mission.card1.title">Making AI Practical for Every Business
-            </h3>
+            <h3 class="mission-card__title" data-i18n="about.mission.card1.title">Making AI Practical for Every Business</h3>
             <p class="mission-card__text" data-i18n="about.mission.card1.text">To make Artificial Intelligence
               practical, affordable, and accessible for every business — regardless of size, industry, or technical
               capability.</p>
           </div>
+          
+          <!-- Center: High-Res Image -->
+          <div class="mission-media-card reveal">
+            <img src="assets/images/about/mission-vision.jpg" alt="Mission & Vision" class="mission-grid-image" />
+          </div>
+          
+          <!-- Card 2: Our Vision -->
           <div class="mission-card reveal-right">
             <div class="mission-card__icon" aria-hidden="true"><svg class="svg-icon" viewBox="0 0 24 24"
                 aria-hidden="true">
@@ -456,8 +512,7 @@
                 <circle cx="12" cy="12" r="3" />
               </svg></div>
             <div class="mission-card__label" data-i18n="about.mission.card2.label">OUR VISION</div>
-            <h3 class="mission-card__title" data-i18n="about.mission.card2.title">Most Trusted AI Partner in Central
-              Asia</h3>
+            <h3 class="mission-card__title" data-i18n="about.mission.card2.title">Most Trusted AI Partner in Central Asia</h3>
             <p class="mission-card__text" data-i18n="about.mission.card2.text">To become the most trusted AI
               transformation partner in Mongolia and Central Asia, helping organisations of all sizes make better
               decisions faster.</p>
@@ -475,7 +530,7 @@
         </div>
         <div class="team-grid">
           <article class="team-card reveal delay-1">
-            <div class="team-card__photo-wrap"><img src="assets/team/batbaatar.jpeg" alt="Batbaatar Narantuya, Chairman"
+            <div class="team-card__photo-wrap"><img src="assets/images/team/batbaatar.jpg" alt="Batbaatar Narantuya, Chairman"
                 class="team-card__photo" width="110" height="110" loading="lazy" /></div>
             <h3 class="team-card__name" data-i18n="team.batbaatar.name">Batbaatar Narantuya</h3>
             <p class="team-card__title" data-i18n="team.batbaatar.title">Chairman & Co-Founder</p>
@@ -493,7 +548,7 @@
                 class="team-card__badge">RE/MAX</span></div>
           </article>
           <article class="team-card reveal delay-2">
-            <div class="team-card__photo-wrap"><img src="assets/team/bujinlkham.jpeg" alt="Bujinlkham Bold, CSO"
+            <div class="team-card__photo-wrap"><img src="assets/images/team/bujinlkham.jpg" alt="Bujinlkham Bold, CSO"
                 class="team-card__photo team-card__photo--bujinlkham" width="110" height="110" loading="lazy" /></div>
             <h3 class="team-card__name" data-i18n="team.bujinlkham.name">Bujinlkham Bold</h3>
             <p class="team-card__title" data-i18n="team.bujinlkham.title">Chief Strategy Officer & Co-Founder</p>
@@ -509,7 +564,7 @@
                 class="team-card__badge">Forbes Mongolia</span></div>
           </article>
           <article class="team-card reveal delay-3">
-            <div class="team-card__photo-wrap"><img src="assets/team/aditi.jpeg" alt="Aditi Goswami, CAIO"
+            <div class="team-card__photo-wrap"><img src="assets/images/team/aditi.jpg" alt="Aditi Goswami, CAIO"
                 class="team-card__photo team-card__photo--aditi" width="110" height="110" loading="lazy" /></div>
             <h3 class="team-card__name" data-i18n="team.aditi.name">Aditi Goswami</h3>
             <p class="team-card__title" data-i18n="team.aditi.title">Chief AI Officer & Co-Founder</p>
@@ -527,7 +582,7 @@
         </div>
         <div class="team-grid-bottom">
           <article class="team-card reveal delay-4">
-            <div class="team-card__photo-wrap"><img src="assets/team/ankesh.jpeg" alt="Ankesh Saha, CTO"
+            <div class="team-card__photo-wrap"><img src="assets/images/team/ankesh.jpg" alt="Ankesh Saha, CTO"
                 class="team-card__photo" width="110" height="110" loading="lazy" /></div>
             <h3 class="team-card__name" data-i18n="team.ankesh.name">Ankesh Saha</h3>
             <p class="team-card__title" data-i18n="team.ankesh.title">Chief Technology Officer & Co-Founder</p>
@@ -543,7 +598,7 @@
                 class="team-card__badge">Google Certified</span></div>
           </article>
           <article class="team-card reveal delay-5">
-            <div class="team-card__photo-wrap"><img src="assets/team/tseesuren.jpeg" alt="Tseesuren Oyungarav, CEO"
+            <div class="team-card__photo-wrap"><img src="assets/images/team/tseesuren.jpg" alt="Tseesuren Oyungarav, CEO"
                 class="team-card__photo" width="110" height="110" loading="lazy" /></div>
             <h3 class="team-card__name" data-i18n="team.tseesuren.name">Tseesuren Oyungarav</h3>
             <p class="team-card__title" data-i18n="team.tseesuren.title">Chief Executive Officer</p>
@@ -607,7 +662,7 @@
             </div>
           </div>
           <div class="reveal-right">
-            <img src="assets/images/dashboard-mockup.png" alt="Khuvsgul AI Executive Intelligence Dashboard"
+            <img src="assets/images/solutions/dashboard-mockup.png" alt="Khuvsgul AI Executive Intelligence Dashboard"
               class="features-image float-anim" width="600" height="420" loading="lazy" />
           </div>
         </div>
@@ -636,22 +691,36 @@
 ───────────────────────────────────────────────────────────── -->
     <section class="page-hero" id="solutions" aria-label="Solutions">
       <div class="container">
-        <div class="page-hero__content">
-          <div class="page-hero__label reveal" data-i18n="solutions.hero.label">AI SOLUTIONS</div>
-          <h2 class="page-hero__headline reveal" data-i18n="solutions.hero.headline">AI Solutions That Deliver Real
-            Business Results</h2>
-          <p class="page-hero__body reveal" data-i18n="solutions.hero.body">We build practical AI solutions tailored to
-            your business, not generic tools. Every solution is designed to deliver measurable value from day one.</p>
+        <div class="page-hero__layout">
+          <div class="page-hero__content">
+            <div class="page-hero__label reveal" data-i18n="solutions.hero.label">AI SOLUTIONS</div>
+            <h2 class="page-hero__headline reveal" data-i18n="solutions.hero.headline">AI Solutions That Deliver Real
+              Business Results</h2>
+            <p class="page-hero__body reveal" data-i18n="solutions.hero.body">We build practical AI solutions tailored to
+              your business, not generic tools. Every solution is designed to deliver measurable value from day one.</p>
+          </div>
+          <div class="page-hero__media reveal-right">
+            <img src="assets/images/solutions/tech.jpg" alt="AI Technology" class="page-hero__image" />
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section bg-light" aria-labelledby="solutions-heading">
       <div class="container">
-        <div class="section-header--center reveal">
-          <span class="section-label" data-i18n="solutions.cards.title">WHAT WE OFFER</span>
-          <h2 class="heading-1" id="solutions-heading" data-i18n="solutions.cards.title">What We Offer</h2>
+        <!-- New Non-Shrinked Header Layout: Title/Text on Left, Image on Right -->
+        <div class="solutions-header-block reveal">
+          <div class="solutions-header-text">
+            <span class="section-label" data-i18n="solutions.cards.title">WHAT WE OFFER</span>
+            <h2 class="heading-1" id="solutions-heading" data-i18n="solutions.cards.title">What We Offer</h2>
+            <p class="solutions-header-desc" data-i18n="solutions.cards.desc">We build practical, custom-tailored AI solutions that address your critical operational needs, automate key workflows, and unlock massive hidden efficiencies.</p>
+          </div>
+          <div class="solutions-header-media">
+            <img src="assets/images/solutions/what-we-offer.jpg" alt="What We Offer" class="solutions-header-image" />
+          </div>
         </div>
+        
+        <!-- Full-Width spacious 3-column cards grid -->
         <div class="solutions-grid">
           <article class="solution-card reveal delay-1">
             <div class="solution-card__number">01</div><span class="solution-card__icon"><svg class="svg-icon"
@@ -720,10 +789,19 @@
 
     <section class="section what-ai-section" aria-labelledby="ai-heading">
       <div class="container">
-        <div class="section-header--center reveal" style="color:var(--text-light);">
-          <span class="section-label" data-i18n="solutions.ai.label">CAPABILITIES</span>
-          <h2 class="heading-1" id="ai-heading" data-i18n="solutions.ai.title">What AI Can Do For Your Business</h2>
+        <!-- New Non-Shrinked Header Layout: Title/Text on Left, Image on Right -->
+        <div class="what-ai-header-block reveal">
+          <div class="what-ai-header-text">
+            <span class="section-label" data-i18n="solutions.ai.label">CAPABILITIES</span>
+            <h2 class="heading-1" id="ai-heading" data-i18n="solutions.ai.title" style="color: var(--white);">What AI Can Do For Your Business</h2>
+            <p class="what-ai-header-desc" data-i18n="solutions.ai.desc">Unlock new levels of growth and operational efficiency with our cutting-edge AI integration capabilities.</p>
+          </div>
+          <div class="what-ai-header-media">
+            <img src="assets/images/solutions/what-ai-can-do.jpg" alt="What AI Can Do" class="what-ai-header-image" />
+          </div>
         </div>
+        
+        <!-- Full-Width spacious 3-column items grid -->
         <div class="what-ai-grid">
           <div class="what-ai-item reveal delay-1"><span class="what-ai-item__icon"><svg class="svg-icon"
                 viewBox="0 0 24 24" aria-hidden="true">
