@@ -27,7 +27,7 @@ const TRANSLATIONS = {
     "home.hero.headline2":  "Make Better Decisions",
     "home.hero.sub":        "Most businesses don't need more data. They need better decisions.",
     "home.hero.body":       "Khuvsgul AI helps business owners, CEOs, and leadership teams transform complex business data into clear, actionable insights through AI-powered dashboards, forecasting tools, and intelligent automation.",
-    "home.hero.cta1":       "BOOK A DEMO",
+    "home.hero.cta1":       "BOOK A CALL",
     "home.hero.cta2":       "LEARN MORE",
     "home.hero.scroll":     "Scroll to explore",
 
@@ -76,7 +76,7 @@ const TRANSLATIONS = {
     "home.demo.label":  "EXECUTIVE DASHBOARD",
     "home.demo.title":  "See your business through a completely different lens",
     "home.demo.body":   "Our AI-powered Executive Dashboard gives leadership teams instant visibility into every dimension of business performance.",
-    "home.demo.cta":    "BOOK A DEMO",
+    "home.demo.cta":    "BOOK A CALL",
     "home.demo.pill1":  "Revenue",
     "home.demo.pill2":  "Profitability",
     "home.demo.pill3":  "Inventory",
@@ -201,7 +201,7 @@ const TRANSLATIONS = {
     "products.for.5": "CFOs",
     "products.for.6": "General Managers",
     "products.cta.title": "Ready to see your business through a completely different lens?",
-    "products.cta.btn":   "BOOK A DEMO",
+    "products.cta.btn":   "BOOK A CALL",
 
     /* SOLUTIONS */
     "solutions.hero.label":   "AI SOLUTIONS",
@@ -249,7 +249,7 @@ const TRANSLATIONS = {
     "solutions.serve.9":  "Sports Organisations",
     "solutions.serve.10": "All Commercial Entities",
     "solutions.serve.11": "Government & NGOs",
-    "solutions.cta.btn":  "BOOK A DEMO",
+    "solutions.cta.btn":  "BOOK A CALL",
 
     /* FAQ */
     "faq.hero.headline": "Frequently Asked Questions",
@@ -295,11 +295,11 @@ const TRANSLATIONS = {
     "contact.success.body":  "Thank you for reaching out. We'll be in touch within 24 hours.",
     "contact.consult.title": "Complimentary 45-Minute AI Consultation",
     "contact.consult.text":  "Discuss your business challenges and discover where AI can create measurable value. Book a free consultation with our team.",
-    "contact.details.email": "info@khuvsgul.ai",
-    "contact.details.web":   "www.khuvsgul.ai",
+    "contact.details.email": "info@khuvsgulai.com",
+    "contact.details.web":   "www.khuvsgulai.com",
     "contact.details.city":  "Ulaanbaatar, Mongolia",
     "contact.details.address":"13th Floor, NM Tower, Mahatma Gandhi Street, 15th Khoroo, Khan-Uul District, Ulaanbaatar",
-    "contact.error.message": "Something went wrong. Please email us at info@khuvsgul.ai",
+    "contact.error.message": "Something went wrong. Please email us at info@khuvsgulai.com",
 
     /* BLOG */
     "blog.label": "OUR BLOG",
@@ -346,7 +346,7 @@ const TRANSLATIONS = {
     "blog.view-all": "View All Articles",
 
     /* SHARED */
-    "cta.book-demo":    "BOOK A DEMO",
+    "cta.book-demo":    "BOOK A CALL",
     "cta.contact-us":  "CONTACT US",
     "cta.learn-more":  "LEARN MORE",
   },
@@ -374,7 +374,7 @@ const TRANSLATIONS = {
     "home.hero.headline2":  "Шийдвэр Гаргахад Туслах AI",
     "home.hero.sub":        "Ихэнх бизнесүүдэд илүү их датагаас илүү илүү сайн шийдвэр гаргах боломж хэрэгтэй.",
     "home.hero.body":       "Хөвсгөл AI нь бизнес эрхлэгчид, гүйцэтгэх удирдлагууд болон удирдлагын багуудад бизнесийн төвөгтэй өгөгдлийг AI-д суурилсан дашбоард шийдвэр гаргахад зориулсан өгөгдлийн самбар, өнгөрсөн хугацааны мэдээлэлд үндэслэн ирээдүйг таамаглах боломж болон ухаалаг автоматжуулалтаар дамжуулан ойлгомжтой, хэрэгжүүлэх боломжтой мэдээлэл болгон хувиргахад тусалдаг.",
-    "home.hero.cta1":       "ДЕМО ЦАГ АВАХ",
+    "home.hero.cta1":       "ДУУДЛАГА ЗАХИАЛАХ",
     "home.hero.cta2":       "ДЭЛГЭРЭНГҮЙ",
     "home.hero.scroll":     "Доош гүйлгэх",
 
@@ -423,7 +423,7 @@ const TRANSLATIONS = {
     "home.demo.label":  "ГҮЙЦЭТГЭХ ДАШБОАРД",
     "home.demo.title":  "Бизнесээ цоо шинэ өнцгөөс хараарай.",
     "home.demo.body":   "Манай AI-д суурилсан Executive Dashboard нь удирдлагуудад дараах мэдээллийг шууд харуулна:",
-    "home.demo.cta":    "ДЕМО ЗАХИАЛАХ",
+    "home.demo.cta":    "ДУУДЛАГА ЗАХИАЛАХ",
     "home.demo.pill1":  "Орлого",
     "home.demo.pill2":  "Ашигт ажиллагаа",
     "home.demo.pill3":  "Бараа материал",
@@ -543,7 +543,7 @@ const TRANSLATIONS = {
     "products.for.5": "Санхүүгийн захирлууд (CFO)",
     "products.for.6": "Менежерүүд",
     "products.cta.title": "Бизнесээ бүрэн өөр өнцгөөс харахад бэлэн үү?",
-    "products.cta.btn":   "ДЕМО ЦАГ АВАХ",
+    "products.cta.btn":   "ДУУДЛАГА ЗАХИАЛАХ",
 
     /* SOLUTIONS */
     "solutions.hero.label":   "AI ШИЙДЛҮҮД",
@@ -591,7 +591,7 @@ const TRANSLATIONS = {
     "solutions.serve.9":  "Спортын байгууллагууд",
     "solutions.serve.10": "Бүх төрлийн худалдааны байгууллагууд",
     "solutions.serve.11": "Төрийн болон төрийн бус байгууллагууд",
-    "solutions.cta.btn":  "ДЕМО ЦАГ АВАХ",
+    "solutions.cta.btn":  "ДУУДЛАГА ЗАХИАЛАХ",
 
     /* FAQ */
     "faq.hero.headline": "Түгээмэл Асуултууд",
@@ -637,11 +637,11 @@ const TRANSLATIONS = {
     "contact.success.body":  "Холбоо барьсанд баярлалаа. Бид 24 цагийн дотор хариу өгнө.",
     "contact.consult.title": "Үнэгүй 45 Минутын AI Зөвлөгөө",
     "contact.consult.text":  "Бизнесийнхээ сорилтуудыг ярилцаж, AI танай байгууллагад хамгийн их үнэ цэнэ бий болгож болохыг хамтдаа тодорхойлцгооё. Бидэнтэй холбогдож 45 минутын консалтинг цаг товлох боломжтой. Манай менежментийн болон технологийн баг таньтай онлайнаар уулзах болно. Хэрэгтэй бүх зүйлээ асуугаарай. Технологийн шийдлийг хамтдаа олоход асууж болохгүй асуулт, тэнэг асуулт гэж үгүй. Бид таньд туслахдаа баяртай байх болноо.",
-    "contact.details.email": "info@khuvsgul.ai",
-    "contact.details.web":   "www.khuvsgul.ai",
+    "contact.details.email": "info@khuvsgulai.com",
+    "contact.details.web":   "www.khuvsgulai.com",
     "contact.details.city":  "Улаанбаатар хот, Монгол Улс",
     "contact.details.address":"Хан-Уул дүүрэг, 15-р хороо,Махатма Гандигийн гудамж,NM Tower, 13 давхар,Улаанбаатар, Монгол Улс",
-    "contact.error.message": "Алдаа гарлаа. info@khuvsgul.ai хаягаар имэйл илгээнэ үү.",
+    "contact.error.message": "Алдаа гарлаа. info@khuvsgulai.com хаягаар имэйл илгээнэ үү.",
 
     /* BLOG */
     "blog.label": "БИДНИЙ БЛОГ",
@@ -688,7 +688,7 @@ const TRANSLATIONS = {
     "blog.view-all": "Бүх Нийтлэлийг Харах",
 
     /* SHARED */
-    "cta.book-demo":    "ДЕМО ЦАГ АВАХ",
+    "cta.book-demo":    "ДУУДЛАГА ЗАХИАЛАХ",
     "cta.contact-us":  "ХОЛБОГДОХ",
     "cta.learn-more":  "ДЭЛГЭРЭНГҮЙ",
   }
