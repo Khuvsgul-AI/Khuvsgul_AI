@@ -630,6 +630,32 @@
   transform: scale(1.01);
 }
 
+.why-named-prose {
+  max-width: 800px;
+  margin: var(--space-12) auto 0;
+  text-align: left;
+}
+
+.why-named-prose p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--gray-600);
+  margin-bottom: var(--space-6);
+}
+
+.why-named-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Premium Lead Paragraph Style (First sentence/paragraph) */
+.why-named-prose p:first-child {
+  font-size: 1.3rem;
+  font-weight: var(--fw-medium);
+  color: var(--navy-900);
+  line-height: 1.6;
+  margin-bottom: var(--space-8);
+}
+
 /* ── Cambridge Journey Visual (100% Horizontal Screen Width Banner) ── */
 .origin-journey-banner {
   width: 100%;

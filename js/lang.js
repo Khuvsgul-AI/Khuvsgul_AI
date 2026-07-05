@@ -102,7 +102,11 @@ const TRANSLATIONS = {
     "about.origin.p2": "Together, supported by the Cambridge ecosystem and global networks, they founded Khuvsgul AI. Today, Khuvsgul AI combines world-class AI capabilities with practical business leadership to help organisations across Mongolia and Central Asia unlock the true value of their data.",
 
     /* ABOUT — WHY NAMED */
+    "about.named.label": "OUR NAME",
     "about.named.title": "Why We Named Khuvsgul AI",
+    "about.named.p1": "We named our company Khuvsgul AI after Lake Khövsgöl, Mongolia's \"Blue Pearl.\"",
+    "about.named.p2": "Just as the lake symbolizes clarity, purity, and depth, we believe artificial intelligence should provide clear insights, deep intelligence, and sustainable value.",
+    "about.named.p3": "Khuvsgul AI combines global AI expertise with a deep understanding of local business needs to help organizations make better decisions, improve profitability, and achieve sustainable growth.",
 
     /* ABOUT — MISSION */
     "about.mission.label":        "PURPOSE",
@@ -449,7 +453,11 @@ const TRANSLATIONS = {
     "about.origin.p2": "Тэд Кембрижийн экосистем, олон улсын экспертүүд болон дэлхийн сүлжээний дэмжлэг, туслалцаатайгаар Хөвсгөл AI-г үүсгэн байгуулсан юм. Өнөөдөр Хөвсгөл AI нь дэлхийн түвшний AI чадамжийг бизнесийн практик туршлагатай хослуулан Монгол болон Төв Азийн байгууллагуудад дата мэдээлэлд суурилан хиймэл оюун ухааны жинхэнэ үнэ цэнийг нээхэд тусалж байна.",
 
     /* ABOUT — WHY NAMED */
+    "about.named.label": "БИДНИЙ НЭР",
     "about.named.title": "Яагаад Хөвсгөл AI гэж нэрлэсэн бэ?",
+    "about.named.p1": "Бид компаниа Монголын төдийгүй дэлхийд алдартай \"Цэнхэр сувд\" хэмээн алдаршсан Хөвсгөл нуураас санаа авч \"Хөвсгөл AI\" гэж нэрлэсэн.",
+    "about.named.p2": "Хөвсгөл нуурын тунгалаг, цэвэр ариун, гүн гүнзгий чанар нь бидний хиймэл оюун ухааны талаарх үзэл баримтлалыг илэрхийлдэг. Бид хиймэл оюун ухаан нь байгууллагуудад илүү тодорхой ойлголт, гүнзгий шинжилгээ, бодит үнэ цэнэ, урт хугацааны тогтвортой өсөлтийг бий болгоход хувь нэмэр оруулах ёстой гэж үздэг.",
+    "about.named.p3": "Хөвсгөл AI нь дэлхийн түвшний AI-ийн мэдлэг, туршлагыг Монголын бизнесийн орчин, хэрэгцээтэй хослуулан байгууллагуудад илүү оновчтой шийдвэр гаргах, ашигт ажиллагаагаа нэмэгдүүлэх, тогтвортой өсөлтийг бий болгох шийдлүүдийг хүргэхийг зорьдог.",
 
     /* ABOUT — MISSION */
     "about.mission.label":        "ЗОРИЛГО",
