@@ -163,11 +163,6 @@ const TRANSLATIONS = {
     "team.ankesh.short":  "Technology entrepreneur and AI strategist with 16+ years across fintech, enterprise software, and climate technology. Former Senior Consultant at PwC.",
     "team.ankesh.full":   "Holds a B.Tech (Honours) in Electronics Engineering from NIT India and is a Google Certified Data Analyst. Leads technology strategy, platform architecture, and product innovation at Khuvsgul AI.",
 
-    "team.tseesuren.name":   "Tseesuren Oyungarav",
-    "team.tseesuren.title":  "Chief Executive Officer",
-    "team.tseesuren.short":  "Digital transformation and fintech executive with 13+ years leading innovation across banking and financial services. Former senior leadership at Capitron Bank and LendMN.",
-    "team.tseesuren.full":   "Holds a Master's in Economics from Saitama University, Japan, and a BBA from the National University of Mongolia. Combines strategic vision and operational excellence to help organisations unlock the full value of AI.",
-
     /* ABOUT — APPROACH */
     "about.approach.label":  "OUR METHODOLOGY",
     "about.approach.title":  "Our Approach",
@@ -508,11 +503,6 @@ const TRANSLATIONS = {
     "team.ankesh.title":  "Технологи Хариуцсан Захирал, Хамтран Үүсгэн Байгуулагч",
     "team.ankesh.short":  "Анкеш Саха нь финтек, байгууллагын програм хангамж, уур амьсгалын технологи болон өгөгдөлд суурилсан бизнесийн салбаруудад технологийн бүтээгдэхүүн, дижитал шийдэл хөгжүүлсэн 16 гаруй жилийн туршлагатай технологийн энтрепренер, бүтээгдэхүүн хөгжүүлэгч, хиймэл оюуны стратегич юм.",
     "team.ankesh.full":   "Өөрийн бизнесүүдийг үүсгэн байгуулахаас өмнө тэрээр PwC компанид Ахлах зөвлөх (Senior Consultant)-аар ажиллаж, байгууллагын хэмжээнд хэрэгждэг дижитал шилжилт болон технологийн томоохон төслүүдийг удирдан хэрэгжүүлж байсан. Тэрээр Энэтхэгийн Үндэсний Технологийн Институт (National Institute of Technology)-ийг Электроникийн инженерийн чиглэлээр (Bachelor of Technology with Honours) төгссөн бөгөөд Google-ийн Баталгаажсан Өгөгдлийн Шинжээч (Google Certified Data Analyst) юм. Анкеш нь шинэ, дэвшилтэт технологиудыг бизнесийн бодит үр дүн бий болгодог, өргөжин тэлэх боломжтой бүтээгдэхүүн болгон хөгжүүлэх чиглэлээр мэргэшсэн. Хөвсгөл AI компанид тэрээр технологийн стратеги, платформын архитектур болон бүтээгдэхүүний инновацийг удирдан ажиллаж байна.",
-
-    "team.tseesuren.name":   "О.Цээсүрэн",
-    "team.tseesuren.title":  "Гүйцэтгэх Захирал (CEO)",
-    "team.tseesuren.short":  "О.Цээсүрэн нь банк санхүү, финтек болон технологийн салбарт инноваци, бүтээгдэхүүн хөгжүүлэлт, бизнесийн өсөлтийг удирдан хэрэгжүүлсэн 13 гаруй жилийн туршлагатай дижитал шилжилт болон финтекийн салбарын удирдах түвшний мэргэжилтэн юм.",
-    "team.tseesuren.full":   "Тэрээр Капитрон Банк, LendMN, SendMN, CodeMe World зэрэг байгууллагуудад удирдах албан тушаал хашиж, дижитал шилжилтийн томоохон хөтөлбөрүүдийг амжилттай хэрэгжүүлэхийн зэрэгцээ зах зээлд шинэлэг дижитал бүтээгдэхүүн, үйлчилгээнүүдийг нэвтрүүлэх ажлыг удирдан ажилласан. Цээсүрэн нь Япон улсын Сайтамагийн Их Сургууль (Saitama University)-ийг Эдийн засгийн магистрын зэрэгтэй төгссөн бөгөөд Монгол Улсын Их Сургууль (МУИС)-ийг Бизнесийн удирдлагын бакалаврын зэрэгтэй төгссөн. Хөвсгөл AI компанийн Гүйцэтгэх захирлын хувьд тэрээр стратегийн алсын хараа, үйл ажиллагааны өндөр үр ашиг, хэрэгжилтийн чадавхаа хослуулан байгууллагуудад хиймэл оюун болон өгөгдөлд суурилсан шийдвэр гаргалтын үнэ цэнийг бүрэн ашиглахад нь туслан ажиллаж байна.",
 
     /* ABOUT — APPROACH */
     "about.approach.label":  "БИДНИЙ АРГАЧЛАЛ",
