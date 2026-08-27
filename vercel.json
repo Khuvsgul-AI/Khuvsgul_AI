@@ -70,7 +70,62 @@
     },
     {
       "source": "/blog/post/index.html",
-      "destination": "/blog/post",
+      "destination": "/blog/stop-chasing-ai-start-chasing-business-impact",
+      "permanent": false
+    },
+    {
+      "source": "/blog/post",
+      "destination": "/blog/stop-chasing-ai-start-chasing-business-impact",
+      "permanent": false
+    },
+    {
+      "source": "/stop-chasing-ai-start-chasing-business-impact",
+      "destination": "/blog/stop-chasing-ai-start-chasing-business-impact",
+      "permanent": false
+    },
+    {
+      "source": "/stop-chasing-ai-start-chasing-business-impact/index.html",
+      "destination": "/blog/stop-chasing-ai-start-chasing-business-impact",
+      "permanent": false
+    },
+    {
+      "source": "/hidden-ai-cost-crisis",
+      "destination": "/blog/hidden-ai-cost-crisis",
+      "permanent": false
+    },
+    {
+      "source": "/hidden-ai-cost-crisis/index.html",
+      "destination": "/blog/hidden-ai-cost-crisis",
+      "permanent": false
+    },
+    {
+      "source": "/amazons-biggest-ai-challenge-cost",
+      "destination": "/blog/amazons-biggest-ai-challenge-cost",
+      "permanent": false
+    },
+    {
+      "source": "/amazons-biggest-ai-challenge-cost/index.html",
+      "destination": "/blog/amazons-biggest-ai-challenge-cost",
+      "permanent": false
+    },
+    {
+      "source": "/microsoft-enterprise-ai-model-routing",
+      "destination": "/blog/microsoft-enterprise-ai-model-routing",
+      "permanent": false
+    },
+    {
+      "source": "/microsoft-enterprise-ai-model-routing/index.html",
+      "destination": "/blog/microsoft-enterprise-ai-model-routing",
+      "permanent": false
+    },
+    {
+      "source": "/uber-ai-budget-finops",
+      "destination": "/blog/uber-ai-budget-finops",
+      "permanent": false
+    },
+    {
+      "source": "/uber-ai-budget-finops/index.html",
+      "destination": "/blog/uber-ai-budget-finops",
       "permanent": false
     }
   ]
