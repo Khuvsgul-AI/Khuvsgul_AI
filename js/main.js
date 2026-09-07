@@ -131,17 +131,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── Current year in footer ──────────────────────────────── */
-  /* ── Calendly Link Config (Optional Helper) ──────────────── */
-  // If you prefer to set the Calendly link in one place rather than editing each button in HTML,
-  // simply uncomment the variable definition below:
-  // const CALENDLY_URL = "https://calendly.com/your-profile";
-  // if (typeof CALENDLY_URL !== 'undefined' && CALENDLY_URL) {
-  //   document.querySelectorAll('a[data-i18n="cta.book-demo"], a[data-i18n="home.hero.cta1"]').forEach(btn => {
-  //     btn.href = CALENDLY_URL;
-  //     btn.target = "_blank";
-  //     btn.rel = "noopener noreferrer";
-  //   });
-  // }
+  /* ── Calendly Link Config ─────────────────────────────────── */
+  const CALENDLY_URL = "https://calendly.com/khuvsgulai-info/30min";
+  if (typeof CALENDLY_URL !== 'undefined' && CALENDLY_URL) {
+    document.querySelectorAll('a[data-i18n="cta.book-demo"], a[data-i18n="home.hero.cta1"], a.calendly-btn, a[href*="calendly.com"]').forEach(btn => {
+      btn.href = CALENDLY_URL;
+      btn.target = "_blank";
+      btn.rel = "noopener noreferrer";
+    });
+  }
 
   const yearEl = document.querySelector('.footer-year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

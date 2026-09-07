@@ -127,6 +127,16 @@
       "source": "/uber-ai-budget-finops/index.html",
       "destination": "/blog/uber-ai-budget-finops",
       "permanent": false
+    },
+    {
+      "source": "/how-ai-is-evolving-and-transforming-business",
+      "destination": "/blog/how-ai-is-evolving-and-transforming-business",
+      "permanent": false
+    },
+    {
+      "source": "/how-ai-is-evolving-and-transforming-business/index.html",
+      "destination": "/blog/how-ai-is-evolving-and-transforming-business",
+      "permanent": false
     }
   ]
 }
