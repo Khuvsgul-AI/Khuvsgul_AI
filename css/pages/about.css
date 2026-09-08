@@ -266,7 +266,7 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
 }
 
@@ -274,7 +274,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-6);
-  max-width: 800px;
+  max-width: calc((100% - 2 * var(--space-6)) * (2 / 3) + var(--space-6));
   margin: var(--space-6) auto 0;
 }
 
@@ -287,6 +287,8 @@
   transition: all var(--transition-base);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-card:hover {
@@ -304,6 +306,7 @@
   border: 3px solid rgba(0, 168, 232, 0.3);
   overflow: hidden;
   transition: border-color var(--transition-base);
+  flex-shrink: 0;
 }
 
 .team-card__photo {
@@ -321,6 +324,10 @@
 .team-card__photo--aditi {
   transform: scale(1.5);
   transform-origin: center 25%;
+}
+
+.team-card__photo--enkhzuun {
+  object-position: center 20%;
 }
 
 .team-card:hover .team-card__photo-wrap {
@@ -536,6 +543,12 @@
   .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .team-grid-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    margin-top: var(--space-6);
+  }
 }
 
 @media (max-width: 768px) {
@@ -555,12 +568,13 @@
   .team-grid,
   .team-grid-bottom {
     grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .team-grid-bottom {
-    margin-top: 0;
+    margin-top: var(--space-6);
   }
 
   .timeline {
