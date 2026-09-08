@@ -266,15 +266,15 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-6);
 }
 
 .team-grid-bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: var(--space-6);
-  max-width: calc((100% - 2 * var(--space-6)) * (2 / 3) + var(--space-6));
+  max-width: calc((100% - 3 * var(--space-6)) / 4);
   margin: var(--space-6) auto 0;
 }
 
@@ -545,9 +545,9 @@
   }
 
   .team-grid-bottom {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
-    margin-top: var(--space-6);
+    grid-template-columns: 1fr;
+    max-width: calc((100% - var(--space-6)) / 2);
+    margin: var(--space-6) auto 0;
   }
 }
 
