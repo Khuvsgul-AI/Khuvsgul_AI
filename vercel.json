@@ -137,6 +137,16 @@
       "source": "/how-ai-is-evolving-and-transforming-business/index.html",
       "destination": "/blog/how-ai-is-evolving-and-transforming-business",
       "permanent": false
+    },
+    {
+      "source": "/family-business-mistakes-and-lessons",
+      "destination": "/blog/family-business-mistakes-and-lessons",
+      "permanent": false
+    },
+    {
+      "source": "/family-business-mistakes-and-lessons/index.html",
+      "destination": "/blog/family-business-mistakes-and-lessons",
+      "permanent": false
     }
   ]
 }
